@@ -54,14 +54,14 @@ export default function TopCoders() {
             <div ref={navbar} className={styles.nav}>
                 <img className={styles.top100Logo} src={top100} alt="logo" />
                 <div className={styles.navLinks}>
-                    <a href="">Home</a>
+                    <a href="#home">Home</a>
                     <a href="">Top 100</a>
-                    <a href="">About</a>
+                    <a href="#about">About</a>
                 </div>
-                <img className={styles.gtechLogo} src={gtech} alt="" />
+                <a href="https://mulearn.org/" target='_blank'><img className={styles.gtechLogo} src={gtech} alt="" /></a>
             </div>
 
-            <div className={styles.topCodersHero}>
+            <div id='home' className={styles.topCodersHero}>
                 <video className={styles.renderVideo} autoPlay loop muted preload="auto">
                     <source src={videoBg} type="video/webm"></source>
                 </video>
@@ -70,11 +70,11 @@ export default function TopCoders() {
                 <span className={styles.rect}></span>
                 <div className={styles.heroBar}>
                     <img src={heroBar} alt="" />
-                    <a href='#'>Join the Top 100 Elite Squad</a>
+                    <a href='#join'>Join the Top 100 Elite Squad</a>
                 </div>
             </div>
 
-            <div className={styles.topCodersContent}>
+            <div id='about' className={styles.topCodersContent}>
                 <img className={styles.topBorder} src={topBorder} alt="" />
                 <div className={styles.text}>
                     <div className={styles.textHead}>
@@ -136,14 +136,19 @@ export default function TopCoders() {
                 </div>
             </div>
 
-            <div className={styles.topCodersForm}>
+            <div id='join' className={styles.topCodersForm}>
                 <form action="" className={styles.codersForm}>
                     <div>
                         <input type="text" placeholder='First Name' />
                         <input type="text" placeholder='Last Name' />
                         <input type="text" placeholder='Email' />
                         <input type="text" placeholder='Phone No.' />
-                        <input type="text" placeholder='Track-selected' />
+                        <select name="" id="" placeholder='Phone No.'>
+                            <option value="Tracks Selected">Tracks Selected</option>
+                            <option value="B">Web Development</option>
+                            <option value="C">Programming</option>
+                            <option value="D">App Development</option>
+                        </select>
                         <input type="text" placeholder='Portfoilio' />
                     </div>
                     <textarea name="" id="" cols="30" rows="7"></textarea>
@@ -204,20 +209,20 @@ export default function TopCoders() {
                 <div>
                     <p>Find us on</p>
                     <span className={styles.socials}>
-                        <a href="#"> <BsDiscord /> </a>
-                        <a href="#"> <BsInstagram /> </a>
-                        <a href="#"> <BsTwitter /> </a>
-                        <a href="#"> <AiOutlineYoutube /> </a>
-                        <a href="#"> <BiLogoFacebook /> </a>
+                        <a href="https://discord.com/invite/Jt7sv3chZP" target='_blank'> <BsDiscord /> </a>
+                        <a href="https://www.instagram.com/gtechmulearn/" target='_blank'> <BsInstagram /> </a>
+                        <a href="https://twitter.com/GtechMulearn" target='_blank'> <BsTwitter /> </a>
+                        <a href="https://www.youtube.com/c/mulearn" target='_blank'> <AiOutlineYoutube /> </a>
+                        <a href="https://www.facebook.com/gtechmulearn" target='_blank'> <BiLogoFacebook /> </a>
                     </span>
                 </div>
 
                 <div className={styles.footerLogos}>
-                    <img src={kerala} alt="" />
+                    <a href="https://startupmission.kerala.gov.in/" target='_blank'><img src={kerala} alt="" /></a>
                     <span className={styles.line}></span>
                     <img src={top100} alt="" />
                     <span className={styles.line}></span>
-                    <img src={gt} alt="" />
+                    <a href="https://mulearn.org/" target='_blank'><img src={gt} alt="" /></a>
                 </div>
             </footer>
 

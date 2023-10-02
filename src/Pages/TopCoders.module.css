@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
-
-:root {
-    --yellow: #FCEE0A;
-}
-
 .topCoders {
-    font-family: 'Antonio', sans-serif;
     height: fit-content;
 }
 
@@ -39,6 +32,7 @@
     font-weight: 100;
     text-transform: uppercase;
     font-size: 1.5rem;
+    color: #fff;
 }
 
 .topCoders .nav .gtechLogo {
@@ -59,7 +53,7 @@
     justify-content: center;
 }
 
-.topCodersHero .renderVideo{
+.topCodersHero .renderVideo {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,13 +90,14 @@
 }
 
 .topCodersHero .heroBar {
-    width: fit-content;
+    width: 100%;
     position: relative;
     top: 10rem;
 }
 
 .topCodersHero .heroBar img {
     height: 5rem;
+    width: 100%;
 }
 
 .topCodersHero .heroBar a {
@@ -186,7 +181,7 @@
 }
 
 .topCodersContent .text .prize p:last-child {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-top: -1rem;
     letter-spacing: .2rem;
 }
@@ -261,9 +256,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: .8rem;
     overflow-x: scroll;
     overflow: visible;
+}
+
+.topCoderSelection .slider::-webkit-scrollbar {
+    width: 0;
+    display: none;
 }
 
 .topCoderSelection .slider .CC {
@@ -277,6 +277,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+.topCoderSelection .slider .card:hover {
+    scale: 1.05;
 }
 
 /* card-1 */
@@ -284,7 +289,7 @@
     position: absolute;
     height: 12rem;
     top: -4rem;
-    animation: key 5s ease-in-out infinite;
+    animation: key 3s ease-in-out infinite;
 }
 
 /* card-2 */
@@ -293,7 +298,7 @@
     height: 15rem;
     top: -1.5rem;
     right: 0rem;
-    animation: key 15s ease-in-out infinite;
+    animation: key 10s ease-in-out infinite;
 }
 
 /* card-3 */
@@ -310,7 +315,7 @@
     height: 12rem;
     top: -1rem;
     right: -1rem;
-    animation: key 8s ease-in-out infinite;
+    animation: key 3s ease-in-out infinite;
 }
 
 /* card-5 */
@@ -318,7 +323,7 @@
     position: absolute;
     height: 10rem;
     top: 0rem;
-    animation: key 8s ease-in-out infinite;
+    animation: key 4s ease-in-out infinite;
 }
 
 @keyframes key {
@@ -375,7 +380,30 @@
     outline: none;
     padding: 0 1rem;
     color: var(--yellow);
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.2rem;
     width: 25rem;
+}
+
+.topCodersForm .codersForm select {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-bottom: 1px solid var(--yellow);
+    background-color: transparent;
+    outline: none;
+    padding: 0 1rem;
+    color: var(--yellow);
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.2rem;
+    width: 25rem;
+    list-style: none;
+}
+
+.topCodersForm .codersForm option {
+    color: #000;
+    font-size: 1rem;
+    background-color: var(--yellow);
 }
 
 .topCodersForm .codersForm input[type="text"]::placeholder {
@@ -449,10 +477,6 @@
     position: relative;
     width: 100%;
     height: 6rem;
-    background-image: url('./assets/faq1.webp');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     color: black;
     text-align: center;
     transition: all .5s ease-in-out;
@@ -470,6 +494,11 @@
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
     width: 100%;
+    height: 6rem;
+    background-image: url('./assets/faq1.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 2rem;
 }
 
@@ -479,12 +508,12 @@
     left: 50%;
     transform: translate(-50%, 0%);
     height: 8rem;
-    width: 65.8%;
-    padding: 2rem 0;
+    width: 100%;
+    padding: 2rem 18rem;
     background-image: url('./assets/faq2.webp');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 80% 50%;
+    background-position: 50% 50%;
     color: white;
     text-align: center;
 }
@@ -493,7 +522,7 @@
     margin-bottom: 5rem;
 }
 
-.faq[open] .chev{
+.faq[open] .chev {
     rotate: 180deg;
 }
 
@@ -526,8 +555,12 @@
     gap: 1rem;
 }
 
+.topcodersFooter .socials a:hover {
+    scale: 1.2;
+}
+
 .topcodersFooter .footerLogos {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 3rem;
     background-color: black;
     display: flex;
@@ -548,7 +581,49 @@
     height: 3rem;
 }
 
-@media(width<748px) {
+@media(width<=1275px) {
+    .topCodersContent .card {
+        height: 35rem;
+        bottom: 2rem;
+    }
+
+    .topCodersContent .topBorder {
+        top: -1rem;
+    }
+
+    .topCodersContent .text .prize p:last-child {
+        font-size: 4rem;
+    }
+
+    .topCodersContent .black,
+    .topCodersContent .line {
+        display: none;
+    }
+
+    .topCoderSelection .selectionHead img {
+        height: 12rem;
+        padding-bottom: 2rem;
+    }
+
+    .topCoderSelection .slider {
+        height: 23rem;
+        gap: 1.5rem;
+        justify-content: start;
+        padding: 0 2rem;
+        overflow: scroll;
+    }
+
+    .topCoderSelection .heroBar {
+        bottom: -4rem;
+    }
+
+    .topCoderSelection .heroBar img {
+        height: 6rem;
+        object-fit: cover;
+    }
+}
+
+@media(width<=768px) {
     .topCoders .nav {
         padding: 0 1rem;
         height: 5rem;
@@ -558,11 +633,9 @@
         display: none;
     }
 
-
     .topCodersContent {
         flex-direction: column;
         padding: 2rem 0;
-        /* align-items: flex-end; */
     }
 
     .topCodersContent .text .prize p:nth-child(1) {
@@ -602,6 +675,10 @@
         padding: 1rem;
     }
 
+    .topCoderSelection .selectionHead span {
+        padding-right: 0rem;
+    }
+
     .topCoderSelection .selectionHead span p:first-child {
         font-size: 4rem;
     }
@@ -623,8 +700,9 @@
         overflow: scroll;
     }
 
-    .topCodersForm .codersForm input[type="text"] {
-        width: 18rem;
+    .topCodersForm .codersForm input[type="text"],
+    .topCodersForm .codersForm select {
+        width: 15rem;
     }
 
     /* Faq section */
@@ -654,16 +732,13 @@
         font-size: 1rem;
     }
 
-    .topcoderFaq .faq {
-        background-size: cover;
-    }
-
     .topcoderFaq .faq .question {
         list-style: none;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        background-size: cover;
         font-size: 1.5rem;
         width: 100%;
         margin-bottom: 2rem;
@@ -672,8 +747,9 @@
     .topcoderFaq .faq .answer {
         height: fit-content;
         width: 100%;
-        padding: 2rem 0;
-        padding-bottom: 4rem;
+        padding: 1rem;
+        padding-bottom: 3rem;
+        background-size: cover;
         font-size: .8rem;
     }
 
@@ -847,17 +923,22 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .topCodersForm .codersForm input[type="text"],
+    .topCodersForm .codersForm select {
+        width: 20rem;
+    }
+
     .faq[open] {
         margin-bottom: 6rem;
     }
 }
 
-@media (width <400px){
-    .topCodersHero .heroBar a{
+@media (width <415px) {
+    .topCodersHero .heroBar a {
         font-size: 1rem;
     }
 
-    .topCodersContent .text .textHead .rect2:first-child{
+    .topCodersContent .text .textHead .rect2:first-child {
         display: none;
     }
 
@@ -867,5 +948,38 @@
 
     .faq[open] {
         margin-bottom: 7rem;
+    }
+}
+
+@media (width <350px) {
+    .topcoderFaq .faq .question {
+        font-size: 1rem;
+    }
+
+    .topCodersForm .codersForm input[type="text"],
+    .topCodersForm .codersForm select {
+        width: 16rem;
+    }
+
+    .topCodersForm .codersForm textarea {
+        width: 16rem;
+    }
+
+    .topCodersForm .codersForm .submit button {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .topcodersFooter div {
+        font-size: 1rem;
+    }
+
+    .topcodersFooter .footerLogos {
+        gap: 1rem;
+    }
+
+    .topcodersFooter .footerLogos img {
+        height: 1.3rem;
     }
 }
