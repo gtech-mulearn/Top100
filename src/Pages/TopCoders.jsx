@@ -2,64 +2,24 @@ import React from 'react'
 import styles from './TopCoders.module.css'
 
 // Images import section
-import top100 from './assets/top100logo.png'
-import gtech from './assets/gtech.webp'
 import heroBar from './assets/heroBar.webp'
 import card from './assets/card.png'
 import cash from './assets/cash.webp'
 import topBorder from './assets/pseudo.webp'
-import arrow1 from './assets/arrow.png'
-import c1 from './assets/c1.png'
-import c2 from './assets/c2.png'
-import c3 from './assets/c3.png'
-import c4 from './assets/c4.png'
-import c5 from './assets/c5.png'
-import key from './assets/key.webp'
-import build from './assets/build.webp'
-import earth from './assets/earth.png'
-import algo from './assets/algo.png'
-import shield from './assets/shield.png'
-import signup from './assets/signup.png'
-import gt from './assets/gt.png'
-import kerala from './assets/kerala.png'
 import videoBg from './assets/vid.webm'
 
-// Icons import section
-import { BsDiscord } from 'react-icons/bs'
-import { BsInstagram } from 'react-icons/bs'
-import { AiOutlineYoutube } from 'react-icons/ai'
-import { BiLogoFacebook } from 'react-icons/bi'
-import { BsTwitter } from 'react-icons/bs'
-import { LuChevronDown } from 'react-icons/lu'
+// Components import section
+import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/Navbar'
+import Form from './components/Form/Form'
+import Faq from './components/Faq/Faq'
+import Selection from './components/Selection/Selection'
+import Challenge from './components/Challenge/Challenge'
 
 export default function TopCoders() {
-
-    const navbar = React.useRef(null)
-
-    React.useEffect(() => {
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                navbar.current.style.top = "0";
-            } else {
-                navbar.current.style.top = "-150px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    }, [])
-
     return (
         <div className={styles.topCoders}>
-            <div ref={navbar} className={styles.nav}>
-                <img className={styles.top100Logo} src={top100} alt="logo" />
-                <div className={styles.navLinks}>
-                    <a href="#home">Home</a>
-                    <a href="">Top 100</a>
-                    <a href="#about">About</a>
-                </div>
-                <a href="https://mulearn.org/" target='_blank'><img className={styles.gtechLogo} src={gtech} alt="" /></a>
-            </div>
+            <Navbar />
 
             <div id='home' className={styles.topCodersHero}>
                 <video className={styles.renderVideo} autoPlay loop muted preload="auto">
@@ -100,132 +60,11 @@ export default function TopCoders() {
                 <span className={styles.line}></span>
             </div>
 
-            <div className={styles.topCoderSelection}>
-                <div className={styles.selectionHead}>
-                    <img src={arrow1} alt="" />
-                    <span>
-                        <p>Criteria for Selection</p>
-                        <p>We're looking for top coders who excel in the following areas:</p>
-                    </span>
-                </div>
-                <div className={styles.slider}>
-                    <div className={styles.card}>
-                        <img className={styles.CC} src={c1} alt="" />
-                        <img className={styles.key} src={key} alt="" />
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.CC} src={c2} alt="" />
-                        <img className={styles.build} src={build} alt="" />
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.CC} src={c3} alt="" />
-                        <img className={styles.algo} src={algo} alt="" />
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.CC} src={c4} alt="" />
-                        <img className={styles.earth} src={earth} alt="" />
-                    </div>
-                    <div className={styles.card}>
-                        <img className={styles.CC} src={c5} alt="" />
-                        <img className={styles.shield} src={shield} alt="" />
-                    </div>
-                </div>
-
-                <div className={styles.heroBar}>
-                    <img src={signup} alt="" />
-                </div>
-            </div>
-
-            <div id='join' className={styles.topCodersForm}>
-                <form action="" className={styles.codersForm}>
-                    <div>
-                        <input type="text" placeholder='First Name' />
-                        <input type="text" placeholder='Last Name' />
-                        <input type="text" placeholder='Email' />
-                        <input type="text" placeholder='Phone No.' />
-                        <select name="" id="" placeholder='Phone No.'>
-                            <option value="Tracks Selected">Tracks Selected</option>
-                            <option value="B">Web Development</option>
-                            <option value="C">Programming</option>
-                            <option value="D">App Development</option>
-                        </select>
-                        <input type="text" placeholder='Portfoilio' />
-                    </div>
-                    <textarea name="" id="" cols="30" rows="7"></textarea>
-                    <div className={styles.submit}>
-                        <span>
-                            <input type="checkbox" name="" id="" />
-                            <label htmlFor="">Terms & Conditions</label>
-                        </span>
-                        <button>Submit</button>
-                    </div>
-                </form>
-            </div>
-
-            <div className={styles.topcoderFaq}>
-                <div className={styles.faqHead}>
-                    <h1>Frequently Asked Questions</h1>
-                    <p>Have questions? We've got answers!</p>
-                </div>
-
-                <details className={styles.faq}>
-                    <summary className={styles.question}>What is Top 100 Coders? <LuChevronDown className={styles.chev} /> </summary>
-                    <p className={styles.answer}>
-                        <b>
-                            Top 100 Coders is an initiative by Gtech to recognize and empower the best coders in India.
-                            We're looking for top coders who excel in the following areas: Competitive Coding,
-                            Open Source, Algorithms, Community Building, and Tech Evangelism.
-                        </b>
-                    </p>
-                </details>
-                <details className={styles.faq}>
-                    <summary className={styles.question}>What happens after the selection process? <LuChevronDown className={styles.chev} /></summary>
-                    <p className={styles.answer}>
-                        <b>
-                            Top 100 Coders is an initiative by Gtech to recognize and empower the best coders in India.
-                            We're looking for top coders who excel in the following areas: Competitive Coding,
-                            Open Source, Algorithms, Community Building, and Tech Evangelism.
-                        </b>
-                    </p>
-                </details>
-                <details className={styles.faq}>
-                    <summary className={styles.question}>How do I apply? <LuChevronDown className={styles.chev} /></summary>
-                    <p className={styles.answer}>
-                        <b>
-                            Top 100 Coders is an initiative by Gtech to recognize and empower the best coders in India.
-                            We're looking for top coders who excel in the following areas: Competitive Coding,
-                            Open Source, Algorithms, Community Building, and Tech Evangelism.
-                        </b>
-                    </p>
-                </details>
-            </div>
-
-            <footer className={styles.topcodersFooter}>
-                <div>
-                    <p>Terms of Use & Privacy Policy</p>
-                    <p>User agreement</p>
-                </div>
-
-                <div>
-                    <p>Find us on</p>
-                    <span className={styles.socials}>
-                        <a href="https://discord.com/invite/Jt7sv3chZP" target='_blank'> <BsDiscord /> </a>
-                        <a href="https://www.instagram.com/gtechmulearn/" target='_blank'> <BsInstagram /> </a>
-                        <a href="https://twitter.com/GtechMulearn" target='_blank'> <BsTwitter /> </a>
-                        <a href="https://www.youtube.com/c/mulearn" target='_blank'> <AiOutlineYoutube /> </a>
-                        <a href="https://www.facebook.com/gtechmulearn" target='_blank'> <BiLogoFacebook /> </a>
-                    </span>
-                </div>
-
-                <div className={styles.footerLogos}>
-                    <a href="https://startupmission.kerala.gov.in/" target='_blank'><img src={kerala} alt="" /></a>
-                    <span className={styles.line}></span>
-                    <img src={top100} alt="" />
-                    <span className={styles.line}></span>
-                    <a href="https://mulearn.org/" target='_blank'><img src={gt} alt="" /></a>
-                </div>
-            </footer>
-
+            <Challenge />
+            <Selection />
+            <Form />
+            <Faq />
+            <Footer />
         </div>
     )
 }
