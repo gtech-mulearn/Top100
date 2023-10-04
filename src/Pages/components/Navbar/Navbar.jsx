@@ -28,7 +28,7 @@ export default function Navbar() {
                     <a href="">Top 100</a>
                     <a href="#about">About</a>
                 </div>
-                <a href="https://mulearn.org/" target='_blank'><img className={styles.gtechLogo} src={gtech} alt="" /></a>
+                <a href="https://mulearn.org/" target='_blank' rel="noreferrer"><img className={styles.gtechLogo} src={gtech} alt="" /></a>
             </div>
         </header>
     )

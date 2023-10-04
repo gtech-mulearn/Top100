@@ -20,20 +20,20 @@ export default function Footer() {
             <div>
                 <p>Find us on</p>
                 <span className={styles.socials}>
-                    <a href="https://discord.com/invite/Jt7sv3chZP" target='_blank'> <BsDiscord /> </a>
-                    <a href="https://www.instagram.com/gtechmulearn/" target='_blank'> <BsInstagram /> </a>
-                    <a href="https://twitter.com/GtechMulearn" target='_blank'> <BsTwitter /> </a>
-                    <a href="https://www.youtube.com/c/mulearn" target='_blank'> <AiOutlineYoutube /> </a>
-                    <a href="https://www.facebook.com/gtechmulearn" target='_blank'> <BiLogoFacebook /> </a>
+                    <a href="https://discord.com/invite/Jt7sv3chZP" target='_blank' rel="noreferrer"> <BsDiscord /> </a>
+                    <a href="https://www.instagram.com/gtechmulearn/" target='_blank' rel="noreferrer"> <BsInstagram /> </a>
+                    <a href="https://twitter.com/GtechMulearn" target='_blank' rel="noreferrer"> <BsTwitter /> </a>
+                    <a href="https://www.youtube.com/c/mulearn" target='_blank' rel="noreferrer"> <AiOutlineYoutube /> </a>
+                    <a href="https://www.facebook.com/gtechmulearn" target='_blank' rel="noreferrer"> <BiLogoFacebook /> </a>
                 </span>
             </div>
 
             <div className={styles.footerLogos}>
-                <a href="https://startupmission.kerala.gov.in/" target='_blank'><img src={kerala} alt="" /></a>
+                <a href="https://startupmission.kerala.gov.in/" target='_blank' rel="noreferrer"><img src={kerala} alt="" /></a>
                 <span className={styles.line}></span>
                 <img src={top100} alt="" />
                 <span className={styles.line}></span>
-                <a href="https://mulearn.org/" target='_blank'><img src={gt} alt="" /></a>
+                <a href="https://mulearn.org/" target='_blank' rel="noreferrer"><img src={gt} alt="" /></a>
             </div>
         </footer>
     )
