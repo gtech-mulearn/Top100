@@ -73,7 +73,7 @@
 
 @media (width <350px) {
     .topcodersFooter div {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .topcodersFooter .footerLogos {

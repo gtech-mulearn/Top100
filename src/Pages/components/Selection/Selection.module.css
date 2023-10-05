@@ -31,13 +31,10 @@
 
 .topCoderSelection .slider {
     position: relative;
-    height: 20rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: .8rem;
-    overflow-x: scroll;
-    overflow: visible;
 }
 
 .topCoderSelection .slider::-webkit-scrollbar {
@@ -131,9 +128,8 @@
     }
 
     .topCoderSelection .slider {
-        height: 23rem;
         gap: 1.5rem;
-        justify-content: start;
+        justify-content: center;
         padding: 0 2rem;
         overflow: scroll;
     }
@@ -145,6 +141,11 @@
     .topCoderSelection .heroBar img {
         height: 6rem;
         object-fit: cover;
+    }
+
+    .topCoderSelection .slider .d1,
+    .topCoderSelection .slider .d2 {
+        display: none;
     }
 }
 
@@ -182,11 +183,12 @@
     }
 
     .topCoderSelection .slider {
-        height: 23rem;
-        gap: 1.5rem;
-        justify-content: start;
+        flex-direction: column;
         padding: 0 2rem;
-        overflow: scroll;
+    }
+
+    .topCoderSelection .slider .CC {
+        height: 30rem;
     }
 }
 
@@ -208,20 +210,8 @@
         height: 8rem;
     }
 
-    .topCoderSelection .slider .d1 {
-        display: none;
-    }
-
-    .topCoderSelection .slider {
-        height: 23rem;
-        gap: 1.5rem;
-        justify-content: start;
-        padding: 0 2rem;
-        overflow: scroll;
-    }
-
     .topCoderSelection .slider .CC {
-        height: 23rem;
+        height: 25rem;
     }
 
     .topCoderSelection .slider .card {
@@ -246,5 +236,30 @@
     /* card-3 */
     .topCoderSelection .slider .card .algo {
         height: 12rem;
+    }
+}
+
+@media(width<350px){
+    .topCoderSelection .heroBar img {
+        height: 4rem;
+    }
+
+    .topCoderSelection .slider .CC {
+        height: 20rem;
+    }
+
+    /* card-1 */
+    .topCoderSelection .slider .card .key {
+        height: 12rem;
+    }
+
+    /* card-2 */
+    .topCoderSelection .slider .card .build {
+        height: 9rem;
+    }
+
+    /* card-3 */
+    .topCoderSelection .slider .card .algo {
+        height: 10rem;
     }
 }

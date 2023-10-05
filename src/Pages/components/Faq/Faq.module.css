@@ -145,4 +145,8 @@
     .topcoderFaq .faq .question {
         font-size: 1rem;
     }
+
+    .topcoderFaq .faqHead h1 {
+        font-size: 2rem;
+    }
 }

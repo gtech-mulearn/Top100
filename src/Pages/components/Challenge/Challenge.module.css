@@ -1,7 +1,7 @@
 .challenge {
     background-color: #000;
     padding: 2rem 0;
-    margin-top: -2rem;
+    margin-top: -5.5rem;
     position: relative;
     background-image: url('../../assets/bg2.png');
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
 @media(width<=968px) {
     .challenge {
         margin-top: 0;
-        height: 50vh;
+        height: 80vh;
     }
 
     .challenge .heading {

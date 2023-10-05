@@ -55,9 +55,6 @@ export default function TopCoders() {
                     </div>
                 </div>
                 <img className={styles.card} src={card} alt="" />
-
-                <span className={styles.black}></span>
-                <span className={styles.line}></span>
             </div>
 
             <Challenge />

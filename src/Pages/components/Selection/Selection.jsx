@@ -35,7 +35,7 @@ export default function Selection() {
                     <img className={styles.CC} src={c3} alt="" />
                     <img className={styles.algo} src={earth} alt="" />
                 </div>
-                <img src={d2} alt="" />
+                <img className={styles.d2} src={d2} alt="" />
             </div>
 
             <div className={styles.heroBar}>
