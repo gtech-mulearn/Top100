@@ -163,26 +163,6 @@
     right: -10rem;
 }
 
-.topCodersContent .black {
-    position: absolute;
-    height: 1.5rem;
-    width: 100%;
-    background-color: black;
-    display: block;
-    bottom: 4rem;
-    left: 0;
-}
-
-.topCodersContent .line {
-    position: absolute;
-    bottom:0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: black;
-    width: 3.5px;
-    height: 4rem;
-}
-
 @media(width<=1275px) {
     .topCodersContent .card {
         height: 35rem;
@@ -195,11 +175,6 @@
 
     .topCodersContent .text .prize p:last-child {
         font-size: 4rem;
-    }
-
-    .topCodersContent .black,
-    .topCodersContent .line {
-        display: none;
     }
 }
 
@@ -321,5 +296,11 @@
 
     .topCodersContent .text .textHead .rect2:first-child {
         display: none;
+    }
+}
+
+@media (width <350px) {
+    .topCodersHero .heroBar a {
+        font-size: .8rem;
     }
 }

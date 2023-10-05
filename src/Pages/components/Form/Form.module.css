@@ -84,11 +84,10 @@
     border: none;
     background-color: #FCEE0A;
     color: black;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.2rem;
     text-transform: uppercase;
     cursor: pointer;
-    border-radius: 50px;
 }
 
 @media(width<=768px) {
@@ -115,17 +114,15 @@
 @media (width <=350px) {
 
     .topCodersForm .codersForm input[type="text"],
-    .topCodersForm .codersForm select {
-        width: 16rem;
-    }
-
+    .topCodersForm .codersForm select,
     .topCodersForm .codersForm textarea {
         width: 16rem;
+        font-size: 1rem;
     }
 
     .topCodersForm .codersForm .submit button {
-        width: 8rem;
+        width: 5rem;
         height: 2.5rem;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 }
