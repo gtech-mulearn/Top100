@@ -15,6 +15,7 @@ import Form from './components/Form/Form'
 import Faq from './components/Faq/Faq'
 import Selection from './components/Selection/Selection'
 import Challenge from './components/Challenge/Challenge'
+import Leaderboard from './components/Leaderboard/Leaderboard'
 
 export default function TopCoders() {
     return (
@@ -59,7 +60,8 @@ export default function TopCoders() {
 
             <Challenge />
             <Selection />
-            <Form />
+            <Leaderboard />
+            {/* <Form / */}
             <Faq />
             <Footer />
         </div>

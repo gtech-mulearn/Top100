@@ -38,9 +38,9 @@ export default function Selection() {
                 <img className={styles.d2} src={d2} alt="" />
             </div>
 
-            <div className={styles.heroBar}>
+            {/* <div className={styles.heroBar}>
                 <img src={signup} alt="" />
-            </div>
+            </div> */}
         </div>
     )
 }
