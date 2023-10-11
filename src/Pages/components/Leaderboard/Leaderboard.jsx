@@ -34,7 +34,7 @@ export default function Leaderboard() {
                             <img className={styles.profileImg} src="" alt="img" />
                             <div className={styles.cardContent}>
                                 <div className={styles.head}>
-                                    <div>
+                                    <div className={styles.name}>
                                         <p>Rank 1</p>
                                         <p>Anandha Krishnan S</p>
                                     </div>
@@ -44,14 +44,14 @@ export default function Leaderboard() {
                                     </div>
                                 </div>
                                 <ul className={styles.content}>
-                                    <li>College: <br /> St Joseeph's Pala</li>
+                                    <li style={{ width: window.innerWidth < 600 ? "50%" : "100%" }}>
+                                        College: St Joseeph's Pala gfgfgfhkdhgkj</li>
                                     <li>District: Kottayam</li>
                                     <li>State: Kerala</li>
                                     <li style={{ color: "#00A2E8" }}>Karma: 3200</li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                     <span className={styles.bottom}></span>
                 </div>
