@@ -7,7 +7,6 @@ import c3 from '../../assets/s3.png'
 import key from '../../assets/key.png'
 import bulb from '../../assets/bulb.png'
 import earth from '../../assets/earth.png'
-import signup from '../../assets/signup.png'
 import d1 from '../../assets/d1.png'
 import d2 from '../../assets/d2.png'
 

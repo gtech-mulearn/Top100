@@ -2,10 +2,6 @@ import styles from "./Leaderboard.module.css";
 import arrow from "../../assets/arrow.png";
 import hacker from "../../assets/hacker.png";
 import line from "../../assets/line.png";
-import axios from "axios";
-
-import { useState, useEffect } from "react";
-
 export default function Leaderboard({ leaderboard }) {
   return (
     <div className={styles.leaderboard}>

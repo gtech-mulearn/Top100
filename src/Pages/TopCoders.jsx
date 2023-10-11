@@ -24,11 +24,8 @@ export default function TopCoders() {
       .then((response) => response.json())
       .then((data) => setLeaderboard(data.response))
       .catch((error) => console.log(error));
-
-    console.log(leaderboard);
   }, []);
 
-  console.log(leaderboard);
 
   return (
     <div className={styles.topCoders}>
