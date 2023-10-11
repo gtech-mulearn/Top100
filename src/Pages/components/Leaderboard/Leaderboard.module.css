@@ -166,7 +166,7 @@
 
 .rankList .card .cardContent .head .name {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     gap: 0.5rem;
 }
 
