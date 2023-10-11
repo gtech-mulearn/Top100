@@ -6,7 +6,7 @@ import heroBar from "./assets/heroBar.webp";
 import card from "./assets/card.png";
 import cash from "./assets/cash.webp";
 import topBorder from "./assets/pseudo.webp";
-import videoBg from "./assets/vid.webm";
+import videoBg from "./assets/newVid.webm";
 
 // Components import section
 import Footer from "./components/Footer/Footer";
