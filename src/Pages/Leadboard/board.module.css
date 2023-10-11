@@ -200,9 +200,6 @@
     color: #fff;
 }
 
-.rankList .card .cardContent .content li:first-child {
-    /* width: 90%; */
-}
 
 @media(width<=1210px) {
     .leaderboard .title .text h1 {
