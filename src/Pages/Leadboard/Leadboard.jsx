@@ -47,11 +47,15 @@ export default function Leaderboard() {
             <div className={styles.rankList}>
               {leaderboard.map((item, index) => (
                 <div key={index} className={styles.card}>
-                  {/* <img className={styles.profileImg} src="" alt="img" /> */}
+                  <img
+                    className={styles.profileImg}
+                    src={item.profile_pic}
+                    alt="img"
+                  />
                   <div className={styles.cardContent}>
                     <div className={styles.head}>
                       <div>
-                        <p>Rank {item.rank}</p>
+                        <p>Rank {index + 1}</p>
                         <p>
                           {item.first_name} {item.last_name}
                         </p>
@@ -62,11 +66,9 @@ export default function Leaderboard() {
                         </div> */}
                     </div>
                     <ul className={styles.content}>
-                      <li>
-                        College: <br /> {item.org_title}
-                      </li>
-                      <li>District: {item.district_name}</li>
-                      <li>State: {item.state_name}</li>
+                      <li>Organization: {item.org}</li>
+                      <li>District: {item.dis}</li>
+                      <li>State: {item.state}</li>
                       <li style={{ color: "#00A2E8" }}>
                         Karma: {item.total_karma}
                       </li>
