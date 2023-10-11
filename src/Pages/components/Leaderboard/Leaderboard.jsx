@@ -2,6 +2,7 @@ import styles from './Leaderboard.module.css'
 import arrow from '../../assets/arrow.png'
 import hacker from '../../assets/hacker.png'
 import line from '../../assets/line.png'
+import topBar from '../../assets/leadtopbg.png'
 
 export default function Leaderboard() {
     return (
@@ -14,6 +15,9 @@ export default function Leaderboard() {
                 <img className={styles.arrow} src={arrow} alt="arrow" />
             </div>
             <div className={styles.container}>
+                <img className={styles.topBar} src={topBar} alt="" />
+                <span className={styles.left}></span>
+                <span className={styles.right}></span>
                 <div className={styles.top}>
                     <p className={styles.title}>
                         Welcome to the top 100 series... <br />
@@ -23,86 +27,33 @@ export default function Leaderboard() {
                     <img className={styles.line} src={line} alt="" />
                     <img className={styles.hacker} src={hacker} alt="" />
                 </div>
-                <div className={styles.rankList}>
-                    <div className={styles.card}>
-                        <img className={styles.profileImg} src="" alt="img" />
-                        <div className={styles.cardContent}>
-                            <div className={styles.head}>
-                                <p>Rank 1</p>
-                                <p>Anandha Krishnan S</p>
-                                <div className={styles.point}>
-                                    <span></span>
-                                    <p>+3</p>
-                                </div>
-                            </div>
-                            <ul className={styles.content}>
-                                <li>College: St Joseeph's Pala</li>
-                                <li>District: Kottayam</li>
-                                <li>State: Kerala</li>
-                                <li style={{ color: "#00A2E8" }}>Karma: 3200</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div className={styles.card}>
-                        <img className={styles.profileImg} src="" alt="img" />
-                        <div className={styles.cardContent}>
-                            <div className={styles.head}>
-                                <p>Rank 1</p>
-                                <p>Anandha Krishnan S</p>
-                                <div className={styles.point}>
-                                    <span></span>
-                                    <p>+3</p>
+                <div className={styles.list}>
+                    <div className={styles.rankList}>
+                        <div className={styles.card}>
+                            <img className={styles.profileImg} src="" alt="img" />
+                            <div className={styles.cardContent}>
+                                <div className={styles.head}>
+                                    <div>
+                                        <p>Rank 1</p>
+                                        <p>Anandha Krishnan S</p>
+                                    </div>
+                                    <div className={styles.point}>
+                                        <span></span>
+                                        <p>+3</p>
+                                    </div>
                                 </div>
+                                <ul className={styles.content}>
+                                    <li>College: <br /> St Joseeph's Pala</li>
+                                    <li>District: Kottayam</li>
+                                    <li>State: Kerala</li>
+                                    <li style={{ color: "#00A2E8" }}>Karma: 3200</li>
+                                </ul>
                             </div>
-                            <ul className={styles.content}>
-                                <li>College: St Joseeph's Pala</li>
-                                <li>District: Kottayam</li>
-                                <li>State: Kerala</li>
-                                <li style={{ color: "#00A2E8" }}>Karma: 3200</li>
-                            </ul>
                         </div>
-                    </div>
 
-                    <div className={styles.card}>
-                        <img className={styles.profileImg} src="" alt="img" />
-                        <div className={styles.cardContent}>
-                            <div className={styles.head}>
-                                <p>Rank 1</p>
-                                <p>Anandha Krishnan S</p>
-                                <div className={styles.point}>
-                                    <span></span>
-                                    <p>+3</p>
-                                </div>
-                            </div>
-                            <ul className={styles.content}>
-                                <li>College: St Joseeph's Pala</li>
-                                <li>District: Kottayam</li>
-                                <li>State: Kerala</li>
-                                <li style={{ color: "#00A2E8" }}>Karma: 3200</li>
-                            </ul>
-                        </div>
                     </div>
-
-                    <div className={styles.card}>
-                        <img className={styles.profileImg} src="" alt="img" />
-                        <div className={styles.cardContent}>
-                            <div className={styles.head}>
-                                <p>Rank 1</p>
-                                <p>Anandha Krishnan S</p>
-                                <div className={styles.point}>
-                                    <span></span>
-                                    <p>+3</p>
-                                </div>
-                            </div>
-                            <ul className={styles.content}>
-                                <li>College: St Joseeph's Pala</li>
-                                <li>District: Kottayam</li>
-                                <li>State: Kerala</li>
-                                <li style={{ color: "#00A2E8" }}>Karma: 3200</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <span className={styles.bottom}></span>
                 </div>
             </div>
         </div>
