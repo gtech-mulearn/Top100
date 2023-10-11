@@ -54,13 +54,18 @@
 
 .topCodersHero .heroBar {
     width: 100%;
+    text-align: center;
     position: relative;
     top: 10rem;
 }
 
 .topCodersHero .heroBar img {
     height: 5rem;
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    /* top: 20%; */
+    transform: translate(-50%, -40%);
+    /* width: 100%; */
 }
 
 .topCodersHero .heroBar a {
@@ -227,13 +232,12 @@
     }
 
     .topCodersHero .heroBar {
-        width: max-content;
         top: 15rem;
     }
 
     .topCodersHero .heroBar img {
-        width: 100%;
         object-fit: cover;
+        height: 2rem;
     }
 
     .topCodersHero .heroBar a {

@@ -36,14 +36,15 @@ export default function TopCoders() {
           className={styles.renderVideo}
           autoPlay
           loop
-          muted
+          // muted
           preload="auto"
         >
           <source src={videoBg} type="video/webm"></source>
         </video>
+
+        {/* <span className={styles.rect}></span>
         <span className={styles.rect}></span>
-        <span className={styles.rect}></span>
-        <span className={styles.rect}></span>
+        <span className={styles.rect}></span> */}
         <div className={styles.heroBar}>
           <img src={heroBar} alt="" />
           <a href="https://github.com/gtech-mulearn/Top-100-Coders#readme" target="_blank" rel="noreferrer">Join the Top 100 Elite Squad</a>
