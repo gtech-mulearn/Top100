@@ -8,12 +8,7 @@ export default function Challenge() {
         <div className={styles.challenge}>
             <img className={styles.heading} src={today} alt="" />
             <p className={styles.content}>
-                THIS S THE SPACE FOR TODAY’s CHALLENGE. WRITE AND DUMP ANY DAILY CHALLENGE HERE.
-                Yeah this is the space for it. THIS S THE SPACE FOR TODAY’s CHALLENGE.
-                WRITE AND DUMP ANY DAILY CHALLENGE HERE. Yeah this is the space for it.
-                THIS S THE SPACE FOR TODAY’s CHALLENGE. WRITE AND DUMP ANY DAILY CHALLENGE HERE.
-                Yeah this is the space for it. THIS S THE SPACE FOR TODAY’s CHALLENGE.
-                WRITE AND DUMP ANY DAILY CHALLENGE HERE. Yeah this is the space for it.
+                For the first 30 days, you a
             </p>
             <img className={styles.bottom} src={bottom} alt="" />
         </div>

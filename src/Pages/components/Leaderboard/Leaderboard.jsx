@@ -34,7 +34,7 @@ export default function Leaderboard({ leaderboard }) {
 
                 <div className={styles.list}>
                     <div className={styles.rankList}>
-                        {leaderboard.slice(0, 4).map((item, index) => (
+                        {leaderboard.slice(0, 10).map((item, index) => (
                             <div key={index} className={styles.card}>
                                 <img
                                     className={styles.profileImg}
