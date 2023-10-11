@@ -23,8 +23,10 @@ export default function Leaderboard({ leaderboard }) {
         <div className={styles.top}>
           <p className={styles.title}>
             Welcome to the top 100 series... <br />
-            Run the command for leaderboard <br />
-            <p style={{ color: "#00A2E8" }}>-leaderboard/reveal</p>
+            Running the command for leaderboard <br />
+            <p className={styles.typewriter} style={{ color: "#00A2E8" }}>
+              -leaderboard/reveal.
+            </p>
           </p>
           <img className={styles.line} src={line} alt="" />
           <img className={styles.hacker} src={hacker} alt="" />
