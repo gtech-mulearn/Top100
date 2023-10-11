@@ -32,45 +32,47 @@ export default function Leaderboard({ leaderboard }) {
           <img className={styles.hacker} src={hacker} alt="" />
         </div>
 
-        <div className={styles.list}>
-          <div className={styles.rankList}>
-            {leaderboard.slice(0, 4).map((item, index) => (
-              <div key={index} className={styles.card}>
-                <img
-                  className={styles.profileImg}
-                  src={item.profile_pic}
-                  alt="img"
-                />
-                <div className={styles.cardContent}>
-                  <div className={styles.head}>
-                    <div>
-                      <p>Rank {index + 1}</p>
-                      <p>
-                        {item.first_name} {item.last_name}
-                      </p>
-                    </div>
-                    {/* <div className={styles.point}>
-                          <span></span>
+                <div className={styles.list}>
+                    <div className={styles.rankList}>
+                        {leaderboard.slice(0, 4).map((item, index) => (
+                            <div key={index} className={styles.card}>
+                                <img
+                                    className={styles.profileImg}
+                                    src={item.profile_pic}
+                                    alt="img"
+                                />
+                                <div className={styles.cardContent}>
+                                    <div className={styles.head}>
+                                        <div className={styles.name}>
+                                            <p>Rank {index + 1}</p>
+                                            <p>
+                                                {item.first_name} {item.last_name}
+                                            </p>
+                                        </div>
+                                        {/* <div className={styles.point}>
+                            <span></span>
                           <p>+3</p>
                         </div> */}
-                  </div>
-                  <ul className={styles.content}>
-                    <li>Organization: {item.org}</li>
-                    <li>District: {item.dis}</li>
-                    <li>State: {item.state}</li>
-                    <li style={{ color: "#00A2E8" }}>
-                      Karma: {item.total_karma}
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            ))}
+                                    </div>
+                                    <ul className={styles.content}>
+                                        <li>Organization:
+                                            {item.org.length > 0 ? item.org : "None"}
+                                        </li>
+                                        <li>District: {item.dis}</li>
+                                        <li>State: {item.state}</li>
+                                        <li style={{ color: "#00A2E8" }}>
+                                            Karma: {item.total_karma}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        ))}
 
-            <span className={styles.bottom}></span>
-          </div>
-          <span className={styles.bottom}></span>
+                        <span className={styles.bottom}></span>
+                    </div>
+                    <span className={styles.bottom}></span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }

@@ -56,7 +56,7 @@ export default function Leaderboard() {
                   />
                   <div className={styles.cardContent}>
                     <div className={styles.head}>
-                      <div>
+                      <div className={styles.name}>
                         <p>Rank {index + 1}</p>
                         <p>
                           {item.first_name} {item.last_name}
