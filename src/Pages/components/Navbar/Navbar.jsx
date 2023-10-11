@@ -24,8 +24,8 @@ export default function Navbar() {
             <div ref={navbar} className={styles.nav}>
                 <img className={styles.top100Logo} src={top100} alt="logo" />
                 <div className={styles.navLinks}>
-                    <a href="#home">Home</a>
-                    <a href="/">Top 100</a>
+                    <a href="/">Home</a>
+                    <a href="/leaderboard">Top 100</a>
                     <a href="#about">About</a>
                 </div>
                 <a href="https://mulearn.org/" target='_blank' rel="noreferrer"><img className={styles.gtechLogo} src={gtech} alt="" /></a>

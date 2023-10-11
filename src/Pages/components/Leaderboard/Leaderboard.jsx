@@ -24,7 +24,7 @@ export default function Leaderboard({ leaderboard }) {
           <p className={styles.title}>
             Welcome to the top 100 series... <br />
             Run the command for leaderboard <br />
-            <p style={{ color: "#00A2E8" }}>-leadrbrd/reveal</p>
+            <p style={{ color: "#00A2E8" }}>-leaderboard/reveal</p>
           </p>
           <img className={styles.line} src={line} alt="" />
           <img className={styles.hacker} src={hacker} alt="" />
@@ -32,40 +32,37 @@ export default function Leaderboard({ leaderboard }) {
 
         <div className={styles.list}>
           <div className={styles.rankList}>
-            <div className={styles.list}>
-              <div className={styles.rankList}>
-                {leaderboard.slice(0,4).map((item, index) => (
-                  <div key={index} className={styles.card}>
-                    {/* <img className={styles.profileImg} src="" alt="img" /> */}
-                    <div className={styles.cardContent}>
-                      <div className={styles.head}>
-                        <div>
-                          <p>Rank {item.rank}</p>
-                          <p>
-                            {item.first_name} {item.last_name}
-                          </p>
-                        </div>
-                        {/* <div className={styles.point}>
+            {leaderboard.slice(0, 4).map((item, index) => (
+              <div key={index} className={styles.card}>
+                {/* <img className={styles.profileImg} src="" alt="img" /> */}
+                <div className={styles.cardContent}>
+                  <div className={styles.head}>
+                    <div>
+                      <p>Rank {item.rank}</p>
+                      <p>
+                        {item.first_name} {item.last_name}
+                      </p>
+                    </div>
+                    {/* <div className={styles.point}>
                           <span></span>
                           <p>+3</p>
                         </div> */}
-                      </div>
-                      <ul className={styles.content}>
-                        <li>
-                          College: <br /> {item.org_title}
-                        </li>
-                        <li>District: {item.district_name}</li>
-                        <li>State: {item.state_name}</li>
-                        <li style={{ color: "#00A2E8" }}>
-                          Karma: {item.total_karma}
-                        </li>
-                      </ul>
-                    </div>
                   </div>
-                ))}
+                  <ul className={styles.content}>
+                    <li>
+                      College:{item.org_title}
+                    </li>
+                    <li>District: {item.district_name}</li>
+                    <li>State: {item.state_name}</li>
+                    <li style={{ color: "#00A2E8" }}>
+                      Karma: {item.total_karma}
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <span className={styles.bottom}></span>
-            </div>
+            ))}
+
+            <span className={styles.bottom}></span>
           </div>
           <span className={styles.bottom}></span>
         </div>

@@ -123,9 +123,10 @@
 }
 
 .rankList {
-    padding: .5rem 1rem;
+    padding: .3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    place-items: left;
 }
 
 .rankList .card {
@@ -133,12 +134,14 @@
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
+    width: fit-content;
 }
 
 .rankList .card .profileImg {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -159,6 +162,12 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.rankList .card .cardContent .head .name {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
 }
 
 .rankList .card .cardContent .head p:first-child {
@@ -189,6 +198,10 @@
 .rankList .card .cardContent .head .point p {
     font-size: 1.2rem;
     color: #fff;
+}
+
+.rankList .card .cardContent .content li:first-child {
+    /* width: 90%; */
 }
 
 @media(width<=1210px) {
@@ -298,6 +311,10 @@
 }
 
 @media(width<=580px) {
+    .rankList .card .cardContent .head .name {
+        flex-direction: column;
+    }
+
     .rankList .card .cardContent .head p:first-child {
         border-right: none;
     }
