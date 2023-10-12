@@ -55,21 +55,19 @@
 }
 
 .topcoderFaq .faq .answer {
-  position: relative;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  height: 8rem;
-  width: 100%;
-  padding: 2rem 18rem;
-  background-image: url("../../assets/faq2.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  color: var(--yellow);
-  text-align: center;
-  margin-top: 1rem;
-  max-width: 1400px;
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 8rem;
+    width: 100%;
+    padding: 2rem 18rem;
+    background-image: url('../../assets/faq2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: var(--yellow);
+    text-align: center;
 }
 
 .faq[open] {
