@@ -13,7 +13,7 @@
 .challenge .heading {
     height: 8rem;
     position: absolute;
-    top: 0%;
+    top: -0.2%;
     left: 35%;
     transform: translate(-40%);
 }
