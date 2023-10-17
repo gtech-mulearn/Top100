@@ -29,15 +29,18 @@ export default function Navbar() {
         <div className={styles.navLinks}>
           <a href="/">Home</a>
           <a href="/leaderboard">Top 100</a>
-          {path === "/leaderboard" ? (
-            <a href="/#about">About</a>
-          ) : (
-            <a href="#about">About</a>
-          )}
         </div>
-        <a href="https://mulearn.org/" target="_blank" rel="noreferrer">
-          <img className={styles.gtechLogo} src={gtech} alt="" />
-        </a>
+        <div className={styles.navbarlinks}>
+          <a href="https://mulearn.org/" target="_blank" rel="noreferrer">
+            <img className={styles.gtechLogo} src={gtech} alt="" />
+          </a>
+          <a
+            href="https://huddleglobal.co.in/top100coders/"
+            className={styles.registerButton}
+          >
+            <button className={styles.registerBtn}>Register</button>
+          </a>
+        </div>
       </div>
     </header>
   );
