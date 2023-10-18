@@ -8,12 +8,13 @@ export default function Challenge() {
     <div className={styles.challenge}>
       <img className={styles.heading} src={today} alt="" />
       <p className={styles.content}>
-        To ascend the rankings and secure a spot within the top 100, you must
-        conquer a series of problem-solving challenges over the course of the
-        initial 30 days. Your path to success hinges on your adeptness in
-        overcoming each task. Furthermore, by providing evidence of your
-        achievements within the designated Discord server, you can 20 upto 10000
-        Karma Points. The more you earn, the higher you climb.
+        To begin, you have to take on the challenges in the problem-solving
+        section on HackerRank, to maintain a rank below 100,000 on the
+        Hackerrank leaderboard. Additionally, ensure to regularly update your
+        progress on Mulearn and receive around 20-10000 karma points to help you
+        climb the Mulearn leaderboard and secure a position within the top 250.
+        Maintain this status for the initial 30 days before transitioning to the
+        daily challenges.
       </p>
       <img className={styles.bottom} src={bottom} alt="" />
     </div>
