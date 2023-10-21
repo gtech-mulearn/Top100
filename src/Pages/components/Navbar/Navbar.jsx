@@ -29,7 +29,7 @@ export default function Navbar() {
         <img className={styles.top100Logo} src={top100} alt="logo" />
         <div className={styles.navLinks}>
           <a href="/">Home</a>
-          <a href="/leaderboard">Top 100</a>
+          <a href="/leaderboard">Leaderboard</a>
         </div>
         <div className={styles.navbarlinks}>
           <a href="https://startupmission.kerala.gov.in/" target="_blank" rel="noreferrer">
