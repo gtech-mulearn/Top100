@@ -55,7 +55,7 @@ export default function Leaderboard({ leaderboard }) {
                   </div>
                   <ul className={styles.content}>
                     <li>Organization:
-                      {item.org.length > 0 ? item.org : "None"}
+                      {item.org?.length > 0 ? item.org : "None"}
                     </li>
                     <li>District: {item.dis}</li>
                     <li>State: {item.state}</li>
