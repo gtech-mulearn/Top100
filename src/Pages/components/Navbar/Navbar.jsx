@@ -30,6 +30,7 @@ export default function Navbar() {
         <div className={styles.navLinks}>
           <a href="/">Home</a>
           <a href="/leaderboard">Leaderboard</a>
+          <a href="/about">About</a>
         </div>
         <div className={styles.navbarlinks}>
           <a href="https://startupmission.kerala.gov.in/" target="_blank" rel="noreferrer">

@@ -2,6 +2,14 @@ import React from "react";
 import styles from "./Faq.module.css";
 import { LuChevronDown } from "react-icons/lu";
 
+import iedcwhite from "../../assets/about/iedcwhite.webp";
+import ieeekswhite from "../../assets/about/ieeekswhite.webp";
+import kkemwhite from "../../assets/about/kkemwhite.webp";
+import natanawhite from "../../assets/about/natanawhite.webp";
+import ksumwhite from "../../assets/about/ksumwhite.webp";
+import technoparkwhite from "../../assets/about/technoparkwhite.webp";
+
+
 export default function Faq() {
   return (
     <div className={styles.topcoderFaq}>
@@ -47,6 +55,18 @@ export default function Faq() {
           </b>
         </p>
       </details>
+      <div className={styles.partnersContainer}>
+        <p className={styles.partnersHeading}>Our Partners</p>
+
+        <div>
+          <img src={iedcwhite} alt="" className={styles.partnerwhite} />
+          <img src={ieeekswhite} alt="" className={styles.partnerwhite} />
+          <img src={kkemwhite} alt="" className={styles.partnerwhite} />
+          <img src={natanawhite} alt="" className={styles.partnerwhite} />
+          <img src={technoparkwhite} alt="" className={styles.partnerwhite} />
+          <img src={ksumwhite} alt="" className={styles.partnerwhite} />
+        </div>
+      </div>
     </div>
   );
 }
