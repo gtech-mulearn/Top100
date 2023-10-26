@@ -74,6 +74,7 @@
 
 .topCodersContent {
   position: relative;
+  top: 5rem;
   height: fit-content;
   background-color: var(--yellow);
   display: flex;
