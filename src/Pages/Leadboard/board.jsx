@@ -5,17 +5,36 @@ import arrow from "../assets/arrow.png";
 import hacker from "../assets/hacker.png";
 import line from "../assets/line.png";
 import topBar from "../assets/leadtopbg.png";
+import pic from "../assets/dpm.webp";
+import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
+  const [invalidAvatars, setInvalidAvatars] = useState([]);
 
   useEffect(() => {
     fetch("https://mulearn.org/api/v1/top100/leaderboard/")
       .then((response) => response.json())
-      .then((data) => setLeaderboard(data.response))
+      .then((data) => {
+        const leaderboardData = data.response;
+
+        // Check the validity of profile_pic URLs
+        leaderboardData.forEach(async (item) => {
+          const imagePath = item.profile_pic;
+
+          try {
+            await axios.get(imagePath);
+          } catch (error) {
+            setInvalidAvatars((invalid) => [...invalid, item.profile_pic]);
+          }
+        });
+
+        setLeaderboard(leaderboardData);
+      })
       .catch((error) => console.log(error));
   }, []);
+
   return (
     <div className={styles.board}>
       <Navbar />
@@ -51,7 +70,11 @@ export default function Leaderboard() {
                 <div key={index} className={styles.card}>
                   <img
                     className={styles.profileImg}
-                    src={item.profile_pic}
+                    src={
+                      invalidAvatars.includes(item.profile_pic)
+                        ? pic // Use a placeholder if the avatar is invalid
+                        : item.profile_pic
+                    }
                     alt="img"
                   />
                   <div className={styles.cardContent}>
