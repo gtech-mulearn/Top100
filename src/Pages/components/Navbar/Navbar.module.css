@@ -40,7 +40,8 @@
     text-decoration: none;
 }
 
-.registerBtn {
+.registerBtn,
+.registerBtn2 {
     margin-top: 0.1rem;
     background-color: #FDEE0B;
     color: #1d1d1d;
@@ -66,6 +67,35 @@
     height: 2.8rem;
 }
 
+.mobileMenuButton {
+    display: none;
+    margin-left: .8rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    transition: all .5s ease-in-out;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    border-bottom-left-radius: .8rem;
+    transition: all .5s ease-in-out;
+}
+
+.mobileMenu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
 @media(max-width: 768px) {
     .nav {
         padding: 0 1rem;
@@ -74,6 +104,10 @@
 
     .nav .navLinks {
         display: none;
+    }
+
+    .mobileMenuButton {
+        display: block;
     }
 }
 
@@ -91,7 +125,10 @@
     }
 
     .registerBtn {
-        padding: 0.3rem 0.5rem;
-        font-size: 0.8rem;
+        display: none;
+    }
+
+    .mobileMenu a {
+        font-size: 1.5rem;
     }
 }
