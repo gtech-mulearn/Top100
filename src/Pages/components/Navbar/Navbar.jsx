@@ -39,21 +39,35 @@ export default function Navbar() {
         </div>
 
         <div className={styles.navbarlinks}>
-          <a href="https://startupmission.kerala.gov.in/" target="_blank" rel="noreferrer">
+          <a
+            href="https://startupmission.kerala.gov.in/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img className={styles.kerala} src={kerala} alt="" />
           </a>
           <a href="https://mulearn.org/" target="_blank" rel="noreferrer">
             <img className={styles.gtechLogo} src={gtech} alt="" />
           </a>
-          <a href="https://huddleglobal.co.in/top100coders/" className={styles.registerButton}>
+          <a
+            href="https://huddleglobal.co.in/top100coders/"
+            className={styles.registerButton}
+          >
             <button className={styles.registerBtn}>Register</button>
+          </a>
+          <a
+            href="https://github.com/gtech-mulearn/Top-100-Coders"
+            className={styles.registerButton}
+          >
+            <button className={styles.registerBtn}>Github Repo</button>
           </a>
 
           {/* Mobile menu button */}
-          <button className={styles.mobileMenuButton} onClick={toggleMobileMenu}>
-            {
-              mobileMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />
-            }
+          <button
+            className={styles.mobileMenuButton}
+            onClick={toggleMobileMenu}
+          >
+            {mobileMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
           {/* Mobile menu */}
           {mobileMenuOpen && (
@@ -61,8 +75,18 @@ export default function Navbar() {
               <a href="/">Home</a>
               <a href="/leaderboard">Leaderboard</a>
               <a href="/about">About</a>
-              <a href="https://huddleglobal.co.in/top100coders/" className={styles.registerButton}>
+
+              <a
+                href="https://huddleglobal.co.in/top100coders/"
+                className={styles.registerButton}
+              >
                 <button className={styles.registerBtn2}>Register</button>
+              </a>
+              <a
+                href="https://github.com/gtech-mulearn/Top-100-Coders"
+                className={styles.registerButton}
+              >
+                <button className={styles.registerBtn2}>Github Repo</button>
               </a>
             </div>
           )}
