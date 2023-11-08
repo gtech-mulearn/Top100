@@ -49,17 +49,12 @@ export default function Navbar() {
           <a href="https://mulearn.org/" target="_blank" rel="noreferrer">
             <img className={styles.gtechLogo} src={gtech} alt="" />
           </a>
-          <a
-            href="https://huddleglobal.co.in/top100coders/"
-            className={styles.registerButton}
-          >
-            <button className={styles.registerBtn}>Register</button>
-          </a>
+  
           <a
             href="https://github.com/gtech-mulearn/Top-100-Coders"
             className={styles.registerButton}
           >
-            <button className={styles.registerBtn}>Github Repo</button>
+            <button className={styles.registerBtn}>Participate Now</button>
           </a>
 
           {/* Mobile menu button */}
@@ -75,18 +70,11 @@ export default function Navbar() {
               <a href="/">Home</a>
               <a href="/leaderboard">Leaderboard</a>
               <a href="/about">About</a>
-
-              <a
-                href="https://huddleglobal.co.in/top100coders/"
-                className={styles.registerButton}
-              >
-                <button className={styles.registerBtn2}>Register</button>
-              </a>
               <a
                 href="https://github.com/gtech-mulearn/Top-100-Coders"
                 className={styles.registerButton}
               >
-                <button className={styles.registerBtn2}>Github Repo</button>
+                <button className={styles.registerBtn2}>Participate Now</button>
               </a>
             </div>
           )}

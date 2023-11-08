@@ -46,7 +46,7 @@ export default function TopCoders() {
         <span className={styles.rect}></span>
         <div className={styles.heroBar}>
           <img src={heroBar} alt="" />
-          <a href="https://huddleglobal.co.in/top100coders/" target="_blank" rel="noreferrer">Join the Top 100 Elite Squad</a>
+          <a href="https://github.com/gtech-mulearn/Top-100-Coders" target="_blank" rel="noreferrer">Participate Now</a>
         </div>
       </div>
 
