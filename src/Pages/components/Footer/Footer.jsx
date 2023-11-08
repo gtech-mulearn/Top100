@@ -12,10 +12,10 @@ import top100 from '../../assets/top100logo.png'
 export default function Footer() {
     return (
         <footer className={styles.topcodersFooter}>
-            <div>
+            {/* <div>
                 <p>Terms of Use & Privacy Policy</p>
                 <p>User agreement</p>
-            </div>
+            </div> */}
 
             <div>
                 <p>Find us on</p>
