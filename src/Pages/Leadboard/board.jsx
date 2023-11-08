@@ -91,9 +91,9 @@ export default function Leaderboard() {
                         </div> */}
                     </div>
                     <ul className={styles.content}>
-                      <li>Organization: {item.org}</li>
-                      <li>District: {item.dis}</li>
-                      <li>State: {item.state}</li>
+                      {item.org && <li>Organization: {item.org}</li>}
+                      {item.dis && <li>District: {item.dis}</li>}
+                      {item.state && <li>State: {item.state}</li>}
                       <li style={{ color: "#00A2E8" }}>
                         Karma: {item.total_karma}
                       </li>
