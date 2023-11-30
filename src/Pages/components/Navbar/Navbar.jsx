@@ -34,7 +34,6 @@ export default function Navbar() {
         <img className={styles.top100Logo} src={top100} alt="logo" />
         <div className={styles.navLinks}>
           <a href="/">Home</a>
-          <a href="/leaderboard">Leaderboard</a>
           <a href="/about">About</a>
         </div>
 
@@ -68,7 +67,6 @@ export default function Navbar() {
           {mobileMenuOpen && (
             <div className={styles.mobileMenu}>
               <a href="/">Home</a>
-              <a href="/leaderboard">Leaderboard</a>
               <a href="/about">About</a>
               <a
                 href="https://github.com/gtech-mulearn/Top-100-Coders"

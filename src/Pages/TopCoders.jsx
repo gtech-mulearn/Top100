@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./TopCoders.module.css";
 
 // Images import section
@@ -14,17 +14,16 @@ import Navbar from "./components/Navbar/Navbar";
 import Faq from "./components/Faq/Faq";
 import Selection from "./components/Selection/Selection";
 import Challenge from "./components/Challenge/Challenge";
-import Leaderboard from "./components/Leaderboard/Leaderboard";
 
 export default function TopCoders() {
-  const [leaderboard, setLeaderboard] = useState([]);
+  // const [leaderboard, setLeaderboard] = useState([]);
 
-  useEffect(() => {
-    fetch("https://mulearn.org/api/v1/top100/leaderboard/")
-      .then((response) => response.json())
-      .then((data) => setLeaderboard(data.response))
-      .catch((error) => console.log(error));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://mulearn.org/api/v1/top100/leaderboard/")
+  //     .then((response) => response.json())
+  //     .then((data) => setLeaderboard(data.response))
+  //     .catch((error) => console.log(error));
+  // }, []);
 
 
   return (
@@ -81,7 +80,7 @@ export default function TopCoders() {
 
       <Challenge />
       <Selection />
-      <Leaderboard leaderboard={leaderboard} />
+      {/* <Leaderboard leaderboard={leaderboard} /> */}
       {/* <Form / */}
       <Faq />
       <Footer />
