@@ -7,8 +7,8 @@ import {
 
 
 import NotFound from "./pages/notFound";
-import { Layout } from "./components/layout";
 import { Home } from "./pages/home";
+import { Layout } from "./components/layout";
 
 function App() {
   const router = createBrowserRouter([
