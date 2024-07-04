@@ -8,6 +8,7 @@ import Criteria from "./components/criteria";
 import Faq from "./components/faq";
 import Testimonial from "./components/testimonial";
 import Partners from "./components/partners";
+import Participate from "./components/participate";
 export const Home = () => {
   return (
     <div className={styles.topCoders}>
@@ -15,6 +16,7 @@ export const Home = () => {
       <About />
       <Team />
       <Reason />
+      <Participate />
       <MuAndCoders />
       <Criteria />
       <Faq />
