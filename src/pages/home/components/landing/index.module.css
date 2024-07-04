@@ -1,0 +1,152 @@
+.topCoders {
+  height: fit-content;
+}
+
+.topCodersHero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  background-image: radial-gradient(rgb(255, 215, 0, 0.8) 1.5px, transparent 0),
+    radial-gradient(rgb(250, 250, 250, 0.3) 1.5px, transparent 0);
+  background-position: -30px 55px, 70px 105px;
+  background-size: 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topCodersHero .renderVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.topCodersHero .rect {
+  position: absolute;
+  width: 3rem;
+  height: 1.3rem;
+  background: var(--yellow);
+}
+
+.topCodersHero .rect:first-child {
+  top: 20%;
+  left: 15%;
+}
+
+.topCodersHero .rect:nth-child(2) {
+  bottom: 15%;
+  left: 10%;
+}
+
+.topCodersHero .rect:nth-child(3) {
+  top: 30%;
+  right: 15%;
+}
+
+.topCodersHero .rect:nth-child(4) {
+  bottom: 25%;
+  right: 0;
+}
+
+.topCodersHero .heroBar {
+  width: fit-content;
+  position: relative;
+  top: 10rem;
+  padding: 2rem;
+}
+
+.topCodersHero .heroBar img {
+  height: 5rem;
+  width: 100%;
+}
+
+.topCodersHero .heroBar a {
+  text-transform: uppercase;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 6px;
+  text-wrap: nowrap;
+}
+
+@media (width<=1280px) {
+  .topCodersContent .card {
+    height: 35rem;
+    bottom: 2rem;
+  }
+
+  .topCodersContent .topBorder {
+    top: -1rem;
+  }
+
+  .topCodersContent .text .text3 {
+    width: 90%;
+    padding: 0 1rem;
+  }
+
+  .topCodersContent .text .prize img {
+    height: 7rem;
+  }
+
+  .topCodersContent .text .prize p:last-child {
+    font-size: 4rem;
+  }
+}
+
+@media (width<=768px) {
+  .topCodersHero .heroBar a {
+    letter-spacing: 2px;
+  }
+}
+
+@media (width<=540px) {
+  .topCodersHero .rect {
+    width: 2rem;
+    height: 0.8rem;
+  }
+
+  .topCodersHero .rect:nth-child(2) {
+    bottom: 25%;
+    left: 5%;
+  }
+
+  .topCodersHero .rect:nth-child(3) {
+    right: 10%;
+  }
+
+  .topCodersHero .rect:nth-child(4) {
+    bottom: 4%;
+  }
+
+  .topCodersHero .heroBar {
+    width: max-content;
+    top: 15rem;
+  }
+
+  .topCodersHero .heroBar img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .topCodersHero .heroBar a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (width <415px) {
+  .topCodersHero .heroBar a {
+    font-size: 1rem;
+  }
+}
+
+@media (width <350px) {
+  .topCodersHero .heroBar a {
+    font-size: 0.8rem;
+  }
+}

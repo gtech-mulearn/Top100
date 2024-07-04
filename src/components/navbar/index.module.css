@@ -1,0 +1,141 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 3rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.top100Logo {
+  height: 4rem;
+}
+
+.nav .navLinks {
+  color: #fff;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  left: 3rem;
+}
+
+.navbarlinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbarlinks img {
+  height: 2rem;
+}
+.nav .navLinks a {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.registerButton {
+  text-decoration: none;
+}
+
+.registerBtn,
+.registerBtn2 {
+  margin-top: 0.1rem;
+  background-color: #fdee0b;
+  color: #1d1d1d;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registerBtn {
+  margin-left: 1rem;
+}
+
+.registerBtn:hover {
+  background-color: #f5e943;
+  color: #1d1d1d;
+}
+
+.nav .gtechLogo {
+  height: 1.8rem;
+  margin-left: 1rem;
+}
+
+.nav .kerala {
+  height: 3.5rem;
+}
+
+.mobileMenuButton {
+  display: none;
+  margin-left: 0.8rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 0.8rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 1rem;
+    height: 5rem;
+  }
+
+  .nav .navLinks {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  .nav .top100Logo {
+    height: 2.1rem;
+  }
+
+  .nav .gtechLogo {
+    height: 1rem;
+  }
+
+  .nav .kerala {
+    height: 1.5rem;
+  }
+
+  .registerBtn {
+    display: none;
+  }
+
+  .mobileMenu a {
+    font-size: 1.5rem;
+  }
+}

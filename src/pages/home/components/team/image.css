@@ -1,0 +1,91 @@
+#rank1 {
+  top: -1vw;
+  left: -4.5vw;
+}
+#rank2 {
+  top: 0;
+  left: -3.2vw;
+}
+#rank3 {
+  right: -3.5vw;
+  top: 0;
+}
+#rank4 {
+  right: 3vw;
+  bottom: -3.6vw;
+}
+#rank5 {
+  bottom: -3.6vw;
+  left: 2.7vw;
+}
+#rank6 {
+  right: 3vw;
+  bottom: -3.6vw;
+}
+#rank7 {
+  bottom: -3.6vw;
+  left: 2.7vw;
+}
+#rank8 {
+  right: 3vw;
+  bottom: -3.6vw;
+}
+@media (width<540px) {
+  #rank1 {
+    top: -1vw;
+    left: -8vw;
+  }
+  #rank1 h2 {
+    font-size: 2rem;
+  }
+  #rank1 h3 {
+    font-size: 0.7rem;
+  }
+
+  #rank2 h2,
+  #rank3 h2,
+  #rank4 h2,
+  #rank5 h2,
+  #rank6 h2,
+  #rank7 h2,
+  #rank8 h2 {
+    font-size: 1.2rem;
+  }
+  #rank2 h3,
+  #rank3 h3,
+  #rank4 h3,
+  #rank5 h3,
+  #rank6 h3,
+  #rank7 h3,
+  #rank8 h3 {
+    font-size: .5rem;
+  }
+  #rank2 {
+    left: -6vw;
+  }
+  #rank3 {
+    right: -6vw;
+  }
+  #rank4 {
+    left: 0vw;
+    right: unset;
+    bottom: -2rem;
+  }
+  #rank5 {
+    bottom: -1.45rem;
+    left: 5vw;
+    scale: .7;
+  }
+  #rank6 {
+    right: 1.5rem;
+    bottom: -1.8rem;
+  }
+  #rank7 {
+    bottom: -1.8rem;
+    left: 4.3vw;
+  }
+  #rank8 {
+    right: 5vw;
+    bottom: -1.8rem;
+  }
+}

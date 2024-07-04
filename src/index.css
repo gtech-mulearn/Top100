@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: 'MyFont';
   src: local('MyFont'), url('./fonts/UrbanRegular.ttf') format('woff');
   line-height: 1.5;
@@ -54,7 +54,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   width: 100%;
-  font-family: 'UrbanRegular';
+  font-family: 'Antonio', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -96,4 +96,4 @@ select {
   border: 1.296px solid #edeef1;
   color: black;
   padding: 15px 10px;
-}
+} */

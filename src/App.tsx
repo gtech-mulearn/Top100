@@ -5,10 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-
 import NotFound from "./pages/notFound";
 import { Home } from "./pages/home";
 import { Layout } from "./components/layout";
+import TandC from "./pages/tandc";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,6 +32,10 @@ function App() {
         {
           path: "/home",
           element: <Home />,
+        },
+        {
+          path: "/termsandconditions",
+          element: <TandC />,
         },
       ],
     },

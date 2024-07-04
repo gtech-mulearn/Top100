@@ -1,15 +1,14 @@
 import { Navbar } from "../navbar";
 import { Footer } from "../footer";
 import { Outlet } from "react-router-dom";
+import styles from "./index.module.css"
 
-type Props = {};
-
-export const Layout = (_props: Props) => {
+export const Layout = () => {
   return (
-    <div>
+    <main className={styles.main}>
       <Navbar />
       <Outlet />
       <Footer />
-    </div>
+    </main>
   );
 };
