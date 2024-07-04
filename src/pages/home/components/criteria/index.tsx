@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.css";
 import arrow1 from "./assets/arrow.png";
 import c1 from "./assets/card-1.png";

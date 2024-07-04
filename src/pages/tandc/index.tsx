@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.css";
 import bg from "./assets/textbg.png"
 export default function TandC() {

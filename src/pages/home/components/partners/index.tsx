@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.css";
 import ict from "./assets/ictacademy.png";
 import ieee from "./assets/ieee.png";

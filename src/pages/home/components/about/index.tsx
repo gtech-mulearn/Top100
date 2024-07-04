@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.css";
 import topBorder from "./assets/topborder.png";
 import cash from "./assets/cash.png";

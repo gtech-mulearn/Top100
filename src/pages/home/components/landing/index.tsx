@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.css";
 import videoBg from "./assets/newVid.webm";
 import heroBar from "./assets/textbg.png";
