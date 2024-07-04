@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.css";
 import Image from "./Image.tsx";
 import firstImg from "./assets/first.png";
