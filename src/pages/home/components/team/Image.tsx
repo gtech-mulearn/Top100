@@ -8,7 +8,7 @@ interface ImageProps {
   rank: string;
 }
 
-const Image: React.FC<ImageProps> = ({ img, name, rank }) => {
+const Image: React.FC<ImageProps> = ({ img, name,rank }) => {
   return (
     <div className={styles.imageCard}>
       <img src={img} alt="" />

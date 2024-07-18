@@ -14,10 +14,10 @@ export const Home = () => {
     <div className={styles.topCoders}>
       <Landing />
       <About />
-      <Team />
       <Reason />
       <Participate />
       <MuAndCoders />
+      <Team />
       <Criteria />
       <Faq />
       <Testimonial />

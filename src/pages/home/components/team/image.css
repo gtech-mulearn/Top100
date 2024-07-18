@@ -1,14 +1,14 @@
 #rank1 {
-  top: -1vw;
-  left: -4.5vw;
+  top: 1rem;
+  right: -8.5vw;
 }
 #rank2 {
-  top: 0;
-  left: -3.2vw;
+  right: 3vw;
+  bottom: -3.6vw;
 }
 #rank3 {
-  right: -3.5vw;
-  top: 0;
+  bottom: -3.6vw;
+  left: 2.7vw;
 }
 #rank4 {
   right: 3vw;
@@ -22,16 +22,16 @@
   right: 3vw;
   bottom: -3.6vw;
 }
-#rank7 {
+/* #rank7 {
   bottom: -3.6vw;
   left: 2.7vw;
 }
 #rank8 {
   right: 3vw;
   bottom: -3.6vw;
-}
+} */
 @media (width<540px) {
-  #rank1 {
+  /* #rank1 {
     top: -1vw;
     left: -8vw;
   }
@@ -40,7 +40,7 @@
   }
   #rank1 h3 {
     font-size: 0.7rem;
-  }
+  } */
 
   #rank2 h2,
   #rank3 h2,
@@ -60,7 +60,7 @@
   #rank8 h3 {
     font-size: .5rem;
   }
-  #rank2 {
+  /* #rank2 {
     left: -6vw;
   }
   #rank3 {
@@ -87,5 +87,5 @@
   #rank8 {
     right: 5vw;
     bottom: -1.8rem;
-  }
+  } */
 }
