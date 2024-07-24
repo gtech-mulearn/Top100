@@ -1,0 +1,355 @@
+.topCoderSelection {
+  position: relative;
+  height: fit-content;
+  padding-top: 6rem;
+  top: -2rem;
+  color: #fff;
+}
+
+.topCoderSelection .selectionHead {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.topCoderSelection .selectionHead span {
+  padding-left: 1rem;
+}
+
+.topCoderSelection .selectionHead span p:first-child {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.topCoderSelection .selectionHead span p:last-child {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.topCoderSelection .slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.topCoderSelection .slider::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.topCoderSelection .slider .d1,
+.topCoderSelection .slider .d2 {
+  object-fit: cover;
+  width: 100%;
+  height: 8rem;
+}
+
+.topCoderSelection .slider .CC {
+  height: 20rem;
+}
+
+.topCoderSelection .slider .card {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.topCoderSelection .slider .card:hover {
+  scale: 1.05;
+}
+
+/* card-1 */
+.topCoderSelection .slider .card .key {
+  position: absolute;
+  height: 16rem;
+  top: -5.5rem;
+  right: -4rem;
+  animation: key 3s ease-in-out infinite;
+}
+
+/* card-2 */
+.topCoderSelection .slider .card .build {
+  position: absolute;
+  height: 15rem;
+  top: -3rem;
+  right: 0.8rem;
+  animation: key 10s ease-in-out infinite;
+}
+
+/* card-3 */
+.topCoderSelection .slider .card .db {
+  position: absolute;
+  height: 15rem;
+  top: -3rem;
+  right: 3rem;
+  animation: key 4s ease-in-out infinite;
+}
+
+/* card-4 */
+.topCoderSelection .slider .card .earth {
+  position: absolute;
+  height: 12rem;
+  top: -2rem;
+  right: -0.5rem;
+  animation: key 5s ease-in-out infinite;
+}
+/* card-5 */
+.topCoderSelection .slider .card .security {
+  position: absolute;
+  height: 12rem;
+  top: -2rem;
+  right: 2rem;
+  animation: key 6s ease-in-out infinite;
+}
+
+@keyframes key {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.3rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.topCoderSelection .heroBar {
+  width: 100%;
+  display: flex;
+  position: relative;
+  bottom: -5rem;
+  left: 0;
+}
+
+.topCoderSelection .heroBar img {
+  width: 100%;
+  z-index: 1;
+}
+
+@media (width<=1275px) {
+  .topCoderSelection .selectionHead img {
+    height: 12rem;
+    padding-bottom: 2rem;
+  }
+
+  .topCoderSelection .slider {
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0 2rem;
+    overflow: scroll;
+  }
+
+  .topCoderSelection .heroBar {
+    bottom: -4rem;
+  }
+
+  .topCoderSelection .heroBar img {
+    height: 6rem;
+    object-fit: cover;
+  }
+
+  .topCoderSelection .slider .d1,
+  .topCoderSelection .slider .d2 {
+    display: none;
+  }
+}
+
+@media (width<=768px) {
+  .topCoderSelection .heroBar {
+    bottom: -3rem;
+  }
+
+  .topCoderSelection .heroBar img {
+    height: 5rem;
+    object-fit: cover;
+  }
+
+  /* selection section */
+  .topCoderSelection .selectionHead {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+
+  .topCoderSelection .selectionHead span {
+    padding-right: 0rem;
+  }
+
+  .topCoderSelection .selectionHead span p:first-child {
+    font-size: 4rem;
+  }
+
+  .topCoderSelection .selectionHead span p:last-child {
+    font-size: 1.3rem;
+  }
+
+  .topCoderSelection .selectionHead img {
+    height: 12rem;
+    padding-bottom: 2rem;
+  }
+
+  .topCoderSelection .slider {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .topCoderSelection .slider .CC {
+    height: 30rem;
+  }
+  /* card-1 */
+  .topCoderSelection .slider .card .key {
+    height: 22rem;
+    top: -7rem;
+    right: -2rem;
+  }
+
+  /* card-2 */
+  .topCoderSelection .slider .card .build {
+    height: 20rem;
+    top: -3rem;
+    right: 1.2rem;
+  }
+
+  /* card-3 */
+  .topCoderSelection .slider .card .db {
+    height: 20rem;
+    top: -2rem;
+    right: 5rem;
+  }
+
+  /* card-4 */
+  .topCoderSelection .slider .card .earth {
+    height: 16rem;
+    top: -1rem;
+    right: -1rem;
+  }
+  /* card-5 */
+  .topCoderSelection .slider .card .security {
+    height: 16rem;
+    top: 0rem;
+    right: 4rem;
+  }
+}
+
+@media (width<=540px) {
+  .topCoderSelection {
+    padding-top: 4rem;
+  }
+  .topCoderSelection .selectionHead {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+
+  .topCoderSelection .selectionHead span p:first-child {
+    font-size: 2.5rem;
+  }
+
+  .topCoderSelection .selectionHead span p:last-child {
+    font-size: 1rem;
+  }
+
+  .topCoderSelection .selectionHead img {
+    height: 8rem;
+  }
+
+  .topCoderSelection .slider .CC {
+    height: 25rem;
+  }
+
+  .topCoderSelection .slider .card {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* card-1 */
+  .topCoderSelection .slider .card .key {
+    height: 18rem;
+    top: -5rem;
+    right: -2rem;
+  }
+
+  /* card-2 */
+  .topCoderSelection .slider .card .build {
+    height: 17rem;
+    top: -3rem;
+    right: 1.2rem;
+  }
+
+  /* card-3 */
+  .topCoderSelection .slider .card .db {
+    height: 18rem;
+    top: -2rem;
+    right: 4rem;
+  }
+
+  /* card-4 */
+  .topCoderSelection .slider .card .earth {
+    height: 14rem;
+    top: -1rem;
+    right: -1rem;
+  }
+  /* card-5 */
+  .topCoderSelection .slider .card .security {
+    height: 13rem;
+    top: 0rem;
+    right: 3rem;
+  }
+}
+
+@media (width<350px) {
+  .topCoderSelection .heroBar img {
+    height: 4rem;
+  }
+
+  .topCoderSelection .slider .CC {
+    height: 20rem;
+  }
+  /* card-1 */
+  .topCoderSelection .slider .card .key {
+    height: 14rem;
+    top: -4rem;
+    right: -1rem;
+  }
+
+  /* card-2 */
+  .topCoderSelection .slider .card .build {
+    height: 13.5rem;
+    top: -2.5rem;
+    right: 1rem;
+  }
+
+  /* card-3 */
+  .topCoderSelection .slider .card .db {
+    height: 15rem;
+    top: -2rem;
+    right: 3rem;
+  }
+
+  /* card-4 */
+  .topCoderSelection .slider .card .earth {
+    height: 11.5rem;
+    top: -1rem;
+    right: -1rem;
+  }
+  /* card-5 */
+  .topCoderSelection .slider .card .security {
+    height: 10rem;
+    top: 0.5rem;
+    right: 2.5rem;
+  }
+}

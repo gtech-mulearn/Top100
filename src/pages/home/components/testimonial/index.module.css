@@ -1,0 +1,143 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial .testiHead {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  padding: 0 7vw;
+  margin-bottom: 3rem;
+}
+
+.testimonial .cardsContainer {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial .cardsContainer .row1,
+.testimonial .cardsContainer .row2 {
+  cursor: pointer;
+}
+
+.testimonial .cardsContainer::after,
+.testimonial .cardsContainer::before {
+  content: "";
+  height: 100%;
+  width: 10px;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  z-index: 2;
+  box-shadow: 2vw 0px 12vw 12vw black;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.testimonial .cardsContainer::before {
+  right: 0;
+}
+
+.testimonial .testimonialCard {
+  position: relative;
+  width: 40rem;
+}
+
+.testimonial .testimonialCard .bgImg {
+  object-fit: contain;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.testimonial .testimonialCard .contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+}
+
+.testimonial .avatarContainer {
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.testimonial .avatarContainer img {
+  height: 99%;
+}
+
+.testimonial .textContainer {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.testimonial .textContainer p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.testimonial .textContainer h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+  text-align: end;
+  transform: translateY(1rem);
+}
+
+@media (width<=1000px) {
+  .testimonial .testimonialCard {
+    width: 30rem;
+  }
+  .testimonial .textContainer p {
+    font-size: 1.1rem;
+  }
+  .testimonial .textContainer h3 {
+    font-size: 1.1rem;
+  }
+  .testimonial .row2 .textContainer {
+    transform: translateX(0);
+  }
+  .testimonial .textContainer {
+    padding: 2rem;
+  }
+}
+
+@media (width<=640px) {
+  .testimonial .testiHead {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .testimonial .testimonialCard {
+    width: 20rem;
+  }
+  .testimonial .textContainer p {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+  .testimonial .textContainer h3 {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+}
+
+@media (width<400px) {
+  .testimonial .testiHead {
+    font-size: 3rem;
+  }
+}

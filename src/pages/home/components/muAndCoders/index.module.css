@@ -1,0 +1,97 @@
+.muAndCodersContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.muAndCodersContainer .textWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 4rem 0;
+}
+.muAndCodersContainer .textContainer {
+  width: 100%t;
+  position: relative;
+  right: 0;
+}
+.muAndCodersContainer .textContainer img {
+  width: 100%;
+  height: 9rem;
+}
+.muAndCodersContainer .textContainer h1 {
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  text-wrap: nowrap;
+  font-weight: 400;
+}
+
+.muAndCodersContainer .cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 5vw;
+}
+
+.muAndCodersContainer .cardContainer img {
+  flex: 1 1 calc(25% - 2rem);
+  max-width: calc(25% - 2rem);
+  box-sizing: border-box;
+}
+
+.muAndCodersContainer .btnContainer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 1rem 7vw;
+  margin-top: 1rem;
+}
+
+.muAndCodersContainer .btnContainer button {
+  font-size: 1rem;
+  background-color: black;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  width: 40rem;
+}
+
+@media (width<=768px) {
+  .muAndCodersContainer .textWrapper {
+    margin: 3rem 0;
+  }
+  .muAndCodersContainer .textContainer img {
+    height: 7rem;
+  }
+  .muAndCodersContainer .textContainer h1 {
+    font-size: 3rem;
+  }
+  .muAndCodersContainer .cardContainer img {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+@media (width<680px) {
+  .muAndCodersContainer .textWrapper {
+    margin: 2rem 0;
+  }
+  .muAndCodersContainer .textContainer img {
+    height: auto;
+  }
+  .muAndCodersContainer .textContainer h1 {
+    font-size: 8vw;
+  }
+  .muAndCodersContainer .cardContainer img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .muAndCodersContainer .btnContainer button {
+    max-width: 100%;
+  }
+}

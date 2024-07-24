@@ -1,9 +1,27 @@
-import styles from './index.module.css'
-
-type Props = {}
-
-export const Home = (_props: Props) => {
+import styles from "./index.module.css";
+import Landing from "./components/landing";
+import About from "./components/about";
+import Team from "./components/team";
+import Reason from "./components/reason";
+import MuAndCoders from "./components/muAndCoders";
+import Criteria from "./components/criteria";
+import Faq from "./components/faq";
+import Testimonial from "./components/testimonial";
+import Partners from "./components/partners";
+import Participate from "./components/participate";
+export const Home = () => {
   return (
-    <div className={styles.Wrapper}>Home</div>
-  )
-}
+    <div className={styles.topCoders}>
+      <Landing />
+      <About />
+      <Reason />
+      <Participate />
+      <MuAndCoders />
+      <Team />
+      <Criteria />
+      <Faq />
+      <Testimonial />
+      <Partners />
+    </div>
+  );
+};
