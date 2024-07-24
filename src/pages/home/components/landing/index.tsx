@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-import videoBg from "./assets/newVid.webm";
+import videoBg from "./assets/vid.webm";
 import heroBar from "./assets/textbg.png";
 export default function Landing() {
   return (
