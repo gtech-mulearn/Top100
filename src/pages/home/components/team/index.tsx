@@ -14,7 +14,7 @@ export default function Team() {
 
       <div className={styles.championsContainer}>
         <div className={styles.row1}>
-          <Image img={fellowData[0].img} name="John Doe" github={fellowData[0].github}/>
+          <Image img={fellowData[0].img} name={fellowData[0].name} github={fellowData[0].github}/>
           <h1 className={styles.rank1Header}>TOP 100 CODER</h1>
         </div>
         <div className={styles.bgContainer}>
