@@ -5,19 +5,19 @@ import "./image.css";
 interface ImageProps {
   img: string;
   name: string;
-  rank: string;
+  github: string;
 }
 
-const Image: React.FC<ImageProps> = ({ img, name,rank }) => {
+const Image: React.FC<ImageProps> = ({ img, name,github }) => {
   return (
-    <div className={styles.imageCard}>
+    <a href={`https://github.com/${github}`} target="_blank" className={styles.imageCard}>
       <img src={img} alt="" />
       <h1>{name}</h1>
-      <div className={styles.rankContainer} id={`rank${rank}`}>
+      {/* <div className={styles.rankContainer} id={`rank${rank}`}>
         <h2>#{rank}</h2>
         <h3>RANK</h3>
-      </div>
-    </div>
+      </div> */}
+    </a>
   );
 };
 
