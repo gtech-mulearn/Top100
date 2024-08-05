@@ -1,6 +1,7 @@
 .participateContainer{
     margin: 5rem 0;
     position: relative;
+    margin-bottom: 14vw;
 }
 .participateContainer img{
     width: 100%;
@@ -9,7 +10,7 @@
     position: absolute;
     color: var(--yellow);
     font-size: 6vw;
-    width: 20vw;
-    top: 50%;
-    left: 15%;
+    width: 80vw;
+    bottom: -30%;
+    left: 4%;
 }
