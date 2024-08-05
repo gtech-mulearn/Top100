@@ -3,7 +3,7 @@ import Landing from "./components/landing";
 import About from "./components/about";
 import Team from "./components/team";
 // import Reason from "./components/reason";
-import MuAndCoders from "./components/muAndCoders";
+// import MuAndCoders from "./components/muAndCoders";
 import Criteria from "./components/criteria";
 import Faq from "./components/faq";
 // import Testimonial from "./components/testimonial";
@@ -16,7 +16,7 @@ export const Home = () => {
       <About />
       {/* <Reason /> */}
       <Participate />
-      <MuAndCoders />
+      {/* <MuAndCoders /> */}
       <Team />
       <Criteria />
       <Faq />
