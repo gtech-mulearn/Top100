@@ -36,8 +36,8 @@ export const Navbar = () => {
         <img className={styles.top100Logo} src="/logo.png" alt="logo" />
         <div className={styles.navLinks}>
           <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="">Join Now</a>
+          <a href="#about">About</a>
+          <a href="https://github.com/gtech-mulearn/Top-100-Coders" target="_blank">Join Now</a>
         </div>
 
         <div className={styles.navbarlinks}>

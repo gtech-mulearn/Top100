@@ -4,9 +4,9 @@ import bg from "./assets/textbg.png";
 import card1 from "./assets/card1.webp";
 import card2 from "./assets/card2.webp";
 import card3 from "./assets/card3.webp";
-import card4 from "./assets/card4.webp";
-import card5 from "./assets/card5.webp";
-import card6 from "./assets/card6.webp";
+import card4 from "./assets/card4.png";
+import card5 from "./assets/card5.png";
+import card6 from "./assets/card6.png";
 import card7 from "./assets/card7.webp";
 import card8 from "./assets/card8.webp";
 const MuAndCoders: React.FC = () => {

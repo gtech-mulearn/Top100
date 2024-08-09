@@ -34,7 +34,13 @@
 
 .meetChampions .championsContainer div img {
   width: 15vw;
-  max-width: 22rem;
+  max-width: 22rem;;
+}
+.meetChampions .championsContainer div a{
+  transition: 0;
+}
+.meetChampions .championsContainer div a:hover{
+  transform: translateY(-10px);
 }
 
 .meetChampions .championsContainer .row1 {

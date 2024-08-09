@@ -1,15 +1,17 @@
 .participateContainer{
-    margin: 5rem 0;
+    margin: 3rem 0;
     position: relative;
+    /* margin-bottom: ; */
 }
 .participateContainer img{
     width: 100%;
 }
 .participateContainer h1{
-    position: absolute;
+    /* position: absolute; */
     color: var(--yellow);
     font-size: 6vw;
-    width: 20vw;
-    top: 50%;
-    left: 15%;
+    width: 80vw;
+    bottom: -30%;
+    left: 4%;
+    margin-left: 4vw;
 }
