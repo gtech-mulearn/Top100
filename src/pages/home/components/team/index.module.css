@@ -128,10 +128,19 @@
   width: 96%;
   text-align: center;
   text-transform: uppercase;
-  padding: 5px 0;
+  padding: .5vw 0;
   font-size: 1.5vw;
 }
-
+.imageCard:nth-child(odd) h1{
+  width: 96.5%;
+  left: 0;
+}
+.imageCard:nth-child(even) h1{
+  width: 95%;
+  left: .4vw;
+  right: 0;
+  /* background-color: red; */
+}
 .rankContainer {
   position: absolute;
   display: none;

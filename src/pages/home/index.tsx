@@ -6,7 +6,7 @@ import Team from "./components/team";
 // import MuAndCoders from "./components/muAndCoders";
 import Criteria from "./components/criteria";
 import Faq from "./components/faq";
-// import Testimonial from "./components/testimonial";
+import Testimonial from "./components/testimonial";
 import Partners from "./components/partners";
 import Participate from "./components/participate";
 export const Home = () => {
@@ -20,7 +20,7 @@ export const Home = () => {
       <Team />
       <Criteria />
       <Faq />
-      {/* <Testimonial /> */}
+      <Testimonial />
       <Partners />
     </div>
   );
