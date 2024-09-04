@@ -1,9 +1,10 @@
 .topCodersContent {
   position: relative;
   height: fit-content;
-  background-color: var(--yellow);
+  background-color: black;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .topCodersContent .topBorder {
@@ -24,7 +25,7 @@
 }
 
 .topCodersContent .text .text3 {
-  width: 70%;
+  width: 75%;
 }
 
 .topCodersContent .text .rect2 {
@@ -42,7 +43,7 @@
 }
 
 .topCodersContent .text .textContent {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
   letter-spacing: 2px;
@@ -54,6 +55,7 @@
   text-align: start;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  color: var(--yellow);
 }
 
 .topCodersContent .text b {
@@ -173,7 +175,7 @@
     padding: 0 2rem;
   }
   .topCodersContent .text .text3 p {
-    font-size: 1.7rem;
+    font-size: 1.4rem
   }
   .topCodersContent .text .rect2 {
     width: 2rem;

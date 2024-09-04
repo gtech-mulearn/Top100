@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import topBorder from "./assets/topborder.png";
 import cash from "./assets/cash.png";
-import build from "./assets/build.png";
+import build from "./assets/build2.png";
 import separator from "./assets/separator-bottom.png";
 export default function About() {
   return (
