@@ -1,17 +1,167 @@
-.participateContainer{
-    margin: 3rem 0;
-    position: relative;
-    /* margin-bottom: ; */
+.participateContainer {
+  margin: 3rem 0;
+  position: relative;
+  /* margin-bottom: ; */
 }
-.participateContainer img{
-    width: 100%;
+.participateContainer img {
+  width: 100%;
+  /* display: none; */
 }
-.participateContainer h1{
-    /* position: absolute; */
-    color: var(--yellow);
-    font-size: 6vw;
-    width: 80vw;
-    bottom: -30%;
-    left: 4%;
-    margin-left: 4vw;
+.participateContainer h1 {
+  /* position: absolute; */
+  color: var(--yellow);
+  font-size: 6vw;
+  width: 80vw;
+  bottom: -30%;
+  left: 4%;
+  margin-left: 4vw;
+}
+
+.stepsContainer {
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  margin: 4rem 0;
+}
+.stepsContainer .step {
+  position: absolute;
+  width: 21.8vw;
+  height: 7vw;
+  /* background-color: green; */
+  /* opacity: .5; */
+  /* overflow: hidden; */
+}
+.stepsContainer .step1 {
+ bottom: 19.5vw;
+  left: 5.2vw;
+  width: 21.8vw;
+  height: fit-content;
+  transition: .15s;
+}
+.stepsContainer .step1 .title{
+    width: 21.8vw;
+    height: 6.9vw;
+    background-color:transparent;
+}
+.stepsContainer .step1 .content{
+    height:0;
+    overflow: hidden;
+    background-color: #fdee0a;
+    padding: 10px;
+    display: none;
+    transition: height .15s;
+    font-size: 1vw;
+}
+.stepsContainer .step1:hover .content{
+    display: block;
+    height: fit-content;
+}
+.stepsContainer .step2 {
+  top: 21.7vw;
+  left: 3.65vw;
+  width: 22.7vw;
+  height: fit-content;
+  transition: .15s;
+}
+.stepsContainer .step2 .title{
+    width: 21.7vw;
+    height: 6.5vw;
+    background-color:transparent;
+}
+.stepsContainer .step2 .content{
+    height:0;
+    overflow: hidden;
+    background-color: #fdee0a;
+    padding: 10px;
+    display: none;
+    transition: height .15s;
+   width: 21.4vw; 
+   font-size: 1vw;
+}
+.stepsContainer .step2:hover .content{
+    display: block;
+    height: fit-content;
+    
+}
+.stepsContainer .step3 {
+  bottom: 18.5vw;
+  left: 42.94vw;
+  width: 20.21vw;
+  height: fit-content;
+  transition: .15s;
+}
+.stepsContainer .step3 .title{
+    width: 20.vw;
+    height: 6.7vw;
+    background-color:transparent;
+}
+.stepsContainer .step3 .content{
+    height:0;
+    overflow: hidden;
+    background-color: #fdee0a;
+    padding: 10px;
+    display: none;
+    transition: height .15s;
+    font-size: 1vw;
+    width:100%;
+}
+.stepsContainer .step3:hover .content{
+    display: block;
+    height: fit-content;
+}
+.stepsContainer .step4 {
+  top: 25.5vw;
+  right: 18.8vw;
+  width: 19.1vw; 
+  height: fit-content;
+  transition: .15s;
+  z-index: 10;
+}
+.stepsContainer .step4 .title{
+    width: 19.1vw;
+    height: 6.5vw;
+    background-color:transparent;
+}
+.stepsContainer .step4 .content{
+    height:0;
+    overflow: hidden;
+    background-color: #fdee0a;
+    padding: 10px;
+    display: none;
+    transition: height .15s;
+   width: 18vw; 
+   font-size: 1vw;
+}
+.stepsContainer .step4:hover .content{
+    display: block;
+    height: fit-content;
+    
+}
+.stepsContainer .step5 {
+  bottom: 24.7vw;
+  right: 9.5vw;
+  height: 8vw;
+  width: 19.7vw;
+  height: fit-content;
+  transition: .15s;
+  /* opacity: .5; */
+}
+.stepsContainer .step5 .title{
+    width: 19.7vw;
+    height: 7.6vw;
+    background-color:transparent;
+}
+.stepsContainer .step5 .content{
+    height:0;
+    overflow: hidden;
+    background-color: #fdee0a;
+    padding: 10px;
+    display: none;
+    transition: height .15s;
+    font-size: 1vw;
+    width:100%;
+}
+.stepsContainer .step5:hover .content{
+    display: block;
+    height: fit-content;
 }
