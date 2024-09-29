@@ -8,50 +8,36 @@ export default function Participate() {
         <img src={roadmap} alt="" />
         <div className={`${styles.step} ${styles.step1}`}>
           <div className={styles.content}>
-            Welcome to the Top 100 Coders initiative Recognised by Kerala Govt.
-            We're on a mission to recognize and empower the best coders in
-            India. If you're passionate about coding and want to make a
-            significant impact in the tech community, you're in the right place.
+          Sign up to be part of the Top 100 Coders initiative and kickstart your journey toward becoming one of the best coders in India.
+
           </div>
           <div className={styles.title}></div>
         </div>
         <div className={`${styles.step} ${styles.step2}`}>
           <div className={styles.title}></div>
           <div className={styles.content}>
-            Welcome to the Top 100 Coders initiative Recognised by Kerala Govt.
-            We're on a mission to recognize and empower the best coders in
-            India. If you're passionate about coding and want to make a
-            significant impact in the tech community, you're in the right place.
+          Connect with the GTech µLearn community on Discord for resources, mentorship, and collaboration.
           </div>
           
         </div>
         <div className={`${styles.step} ${styles.step3}`}>
           
           <div className={styles.content}>
-            Welcome to the Top 100 Coders initiative Recognised by Kerala Govt.
-            We're on a mission to recognize and empower the best coders in
-            India. If you're passionate about coding and want to make a
-            significant impact in the tech community, you're in the right place.
+          Link your Discord account to the initiative to stay updated with announcements, events, and challenges.
           </div>
           <div className={styles.title}></div>
         </div>
         <div className={`${styles.step} ${styles.step4}`}>
           <div className={styles.title}></div>
           <div className={styles.content}>
-            Welcome to the Top 100 Coders initiative Recognised by Kerala Govt.
-            We're on a mission to recognize and empower the best coders in
-            India. If you're passionate about coding and want to make a
-            significant impact in the tech community, you're in the right place.
+          Secure your place in the competition by verifying your digital identity, ensuring a seamless participation process.
           </div>
           
         </div>
         <div className={`${styles.step} ${styles.step5}`}>
           
           <div className={styles.content}>
-            Welcome to the Top 100 Coders initiative Recognised by Kerala Govt.
-            We're on a mission to recognize and empower the best coders in
-            India. If you're passionate about coding and want to make a
-            significant impact in the tech community, you're in the right place.
+          Start competing in coding challenges, collaborate with peers, and showcase your skills to make your mark in the Top 100 Coders.
           </div>
           <div className={styles.title}></div>
         </div>
