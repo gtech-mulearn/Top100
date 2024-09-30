@@ -1,20 +1,12 @@
-<<<<<<< HEAD
 .participateContainer {
   margin: 3rem 0;
   position: relative;
   /* margin-bottom: ; */
-=======
-.participateContainer{
-    margin: 3rem 0;
-    position: relative;
-    /* margin-bottom: ; */
->>>>>>> a6bb45d871e2a22f615b732d8e654b274c67561a
 }
 .participateContainer img {
   width: 100%;
   /* display: none; */
 }
-<<<<<<< HEAD
 .participateContainer h1 {
   /* position: absolute; */
   color: var(--yellow);
@@ -172,14 +164,4 @@
 .stepsContainer .step5:hover .content{
     display: block;
     height: fit-content;
-=======
-.participateContainer h1{
-    /* position: absolute; */
-    color: var(--yellow);
-    font-size: 6vw;
-    width: 80vw;
-    bottom: -30%;
-    left: 4%;
-    margin-left: 4vw;
->>>>>>> a6bb45d871e2a22f615b732d8e654b274c67561a
 }

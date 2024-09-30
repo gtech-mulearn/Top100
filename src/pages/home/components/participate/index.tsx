@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import styles from "./index.module.css";
 import roadmap from "./assets/roadmap2.svg";
 export default function Participate() {
@@ -43,15 +42,6 @@ export default function Participate() {
           <div className={styles.title}></div>
         </div>
       </div>
-=======
-import styles from "./index.module.css"
-import roadmap from "./assets/roadmap2.svg"
-export default function Participate() {
-  return (
-    <div className={styles.participateContainer}>
-        <h1>HOW TO PARTICIPATE?</h1>
-        <img src={roadmap} alt="" />
->>>>>>> a6bb45d871e2a22f615b732d8e654b274c67561a
     </div>
   );
 }
