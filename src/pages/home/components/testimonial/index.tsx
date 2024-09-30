@@ -47,6 +47,13 @@ export default function Testimonial() {
         "I started my entrepreneurship journey at IN50HRS, and seeing the Top 100 Coders aspirants brings back memories of that exciting time. You have an incredible opportunity before you, a chance to shape your future and make a significant impact. Seize it and make the most of it.",
       author: "Ajeesh Achuthan, Founder of Open, Kerala's first Unicorn startup",
     },
+    {
+      bg: bg3,
+      avatar: person3,
+      testimonial:
+        "Lorem ipsum dolor sit amet consectetur. Vulputate auctor pretium quisque interdum erat ornare lacus nulla semper. In in at tempus sapien tellus ",
+      author: "JOHN DOE",
+    },
   ];
 
   // const cardData2: CardData[] = [
