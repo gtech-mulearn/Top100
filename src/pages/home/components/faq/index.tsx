@@ -39,8 +39,7 @@ export default function Faq() {
       </summary>
       <p className={styles.answer}>
         <b>
-          You can apply by clicking on the register button on the top right
-          corner of the page. You will be redirected to the registration page.
+          You can apply by clicking on the register button on the top of the page. You will be redirected to the registration page.
           Fill in the details and you will be registered.
         </b>
       </p>

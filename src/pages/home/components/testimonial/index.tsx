@@ -23,29 +23,29 @@ export default function Testimonial() {
       bg: bg2,
       avatar: person2,
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur. Vulputate auctor pretium quisque interdum erat ornare lacus nulla semper. In in at tempus sapien tellus ",
-      author: "JOHN DOE",
+        "Top 100 Coders has been a fantastic experiment, bringing together the brightest minds and showcasing incredible energy and creativity. This initiative has been a tremendous success, and I am very eager to see the continued progress and achievements of our participants. Thank you to everyone involved for making this possible.",
+      author: "Anoop Ambika, CEO, Kerala Startup Mission",
     },
     {
       bg: bg3,
       avatar: person3,
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur. Vulputate auctor pretium quisque interdum erat ornare lacus nulla semper. In in at tempus sapien tellus ",
-      author: "JOHN DOE",
+        "I started my entrepreneurship journey at IN50HRS, and seeing the Top 100 Coders aspirants brings back memories of that exciting time. You have an incredible opportunity before you, a chance to shape your future and make a significant impact. Seize it and make the most of it.",
+      author: "Ajeesh Achuthan, Founder of Open, Kerala's first Unicorn startup",
     },
     {
       bg: bg2,
       avatar: person2,
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur. Vulputate auctor pretium quisque interdum erat ornare lacus nulla semper. In in at tempus sapien tellus ",
-      author: "JOHN DOE",
+        "Top 100 Coders has been a fantastic experiment, bringing together the brightest minds and showcasing incredible energy and creativity. This initiative has been a tremendous success, and I am very eager to see the continued progress and achievements of our participants. Thank you to everyone involved for making this possible.",
+      author: "Anoop Ambika, CEO, Kerala Startup Mission",
     },
     {
       bg: bg3,
       avatar: person3,
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur. Vulputate auctor pretium quisque interdum erat ornare lacus nulla semper. In in at tempus sapien tellus ",
-      author: "JOHN DOE",
+        "I started my entrepreneurship journey at IN50HRS, and seeing the Top 100 Coders aspirants brings back memories of that exciting time. You have an incredible opportunity before you, a chance to shape your future and make a significant impact. Seize it and make the most of it.",
+      author: "Ajeesh Achuthan, Founder of Open, Kerala's first Unicorn startup",
     },
   ];
 

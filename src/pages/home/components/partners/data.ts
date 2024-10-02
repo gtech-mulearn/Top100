@@ -4,6 +4,7 @@ import keem from "./assets/keem.png";
 import ksum from "./assets/ksum.png";
 import techopark from "./assets/technopark.png";
 import vatana from "./assets/vatana.png";
+import mulearn from "./assets/mulearn.png"
 export const partners = [
   {
     name: "ICT Academy",
@@ -14,16 +15,20 @@ export const partners = [
     src: ieee,
   },
   {
+    name: "Mulearn",
+    src:mulearn,
+  },
+  {
     name: "KEEM",
     src:keem,
   },
   {
-    name: "Technopark",
-    src: techopark,
-  },
-  {
     name: "Vatana",
     src: vatana,
+  },
+  {
+    name: "Technopark",
+    src: techopark,
   },
   {
     name: "KSUM",

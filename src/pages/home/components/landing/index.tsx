@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
-import videoBg from "./assets/vid.webm";
+import videoBg from "./assets/bgvid.mp4";
 import heroBar from "./assets/textbg.png";
+import textbg from "./assets/action-bg.svg"
 export default function Landing() {
   return (
     <div id="home" className={styles.topCodersHero}>
@@ -19,6 +20,9 @@ export default function Landing() {
         >
           Join the Top 100 Elite Squad
         </a>
+      </div>
+      <div className={styles.actionbg}>
+        <img src={textbg} alt="" />
       </div>
     </div>
   );
