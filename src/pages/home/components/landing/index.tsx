@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import videoBg from "./assets/bgvid.mp4";
 import heroBar from "./assets/textbg.png";
-import textbg from "./assets/action-bg.svg"
+import textbg from "./assets/action-bg.svg";
 export default function Landing() {
   return (
     <div id="home" className={styles.topCodersHero}>
@@ -14,7 +14,7 @@ export default function Landing() {
       <div className={styles.heroBar}>
         <img src={heroBar} alt="" />
         <a
-          href="https://github.com/gtech-mulearn/Top-100-Coders"
+          href="https://airtable.com/appCAPOMQvpUnbWeb/pagIgGX2FBrG2OaUg/form"
           target="_blank"
           rel="noreferrer"
         >

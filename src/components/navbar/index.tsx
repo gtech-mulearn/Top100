@@ -37,7 +37,12 @@ export const Navbar = () => {
         <div className={styles.navLinks}>
           <a href="/">Home</a>
           <a href="#about">About</a>
-          <a href="https://github.com/gtech-mulearn/Top-100-Coders" target="_blank">Join Now</a>
+          <a
+            href="https://airtable.com/appCAPOMQvpUnbWeb/pagIgGX2FBrG2OaUg/form"
+            target="_blank"
+          >
+            Join Now
+          </a>
         </div>
 
         <div className={styles.navbarlinks}>
